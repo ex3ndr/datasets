@@ -1,0 +1,31 @@
+# Description
+name: CIFAR-10
+url: "https://www.cs.toronto.edu/~kriz/cifar.html"
+description: "The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images."
+lisence: Unknown
+
+# Dataset files
+files:
+  default: python
+  variants:
+    python: 
+      name: Python
+      url: "https://shared.korshakov.com/datasets/cifar-10/cifar-10.tar.gz"
+      hashes:
+        sha1: "f0e425db1baa65c23767d20bdb6ae35e77a4b5a7"
+        sha256: "dce7b2f725c01ae60494c85de4b856c9c4e355b9a68e92dc33e034f038bae370"
+        md5: "548eae707bff548e3cf11ef7e75dd489"
+    matlab:
+      name: Matlab
+      url: "https://shared.korshakov.com/datasets/cifar-10/cifar-10-matlab.tar.gz"
+      hashes:
+        sha1: "5fa6536f3e5a9709db43a2610059ec7ab2d65cac"
+        sha256: "9218fc8df39105698b4ded7f842eeda07dc22c64b2789c052c5723e4bc8a8e94"
+        md5: "2f70f4ac077ee10271d23b45b34cc344"
+    binary:
+      name: Binary
+      url: "https://shared.korshakov.com/datasets/cifar-10/cifar-10-binary.tar.gz"
+      hashes:
+        sha1: "9ee6eaa06a293141b1181a5cb8a72324474abb45"
+        sha256: "c462409d47f51852bc31f3a2a698261c1145070fb10c65a1f1f8f40abd9eb43c"
+        md5: "af2e4a171d2c76383c2e973c0b64d57b"      
