@@ -1,0 +1,4 @@
+destination: "external_datasets"
+datasets:
+  - cifar-10
+  - cifar-10@matlab

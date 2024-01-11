@@ -1,2 +1,4 @@
 *.gz
 preparation/dataset
+out
+example/external_datasets
