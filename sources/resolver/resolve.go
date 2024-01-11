@@ -51,19 +51,23 @@ func resolveStandardDataset(dataset string) (*Resolved, error) {
 		return nil, err
 	}
 
-	// Resolving version
-	if version == "" {
-		version = descriptor.Files.Default
-	}
+	// Loading id
+	id := descriptor.ID
 
-	// Resolving variant
-	descriptorVariant := descriptor.Files.Variants[version]
+	// Resolving
+	data := descriptor.Dataset
+	if version != "" {
+		d := descriptor.Extras[version]
+		data = d.Dataset
+		name = d.Name
+		id = d.ID
+	}
 
 	// Resolving hashes
 	return &Resolved{
-		ID:       name,
-		Name:     descriptor.Name,
-		Endpoint: descriptorVariant.URL,
+		ID:       id,
+		Name:     name,
+		Endpoint: data.URL,
 	}, nil
 }
 

@@ -12,21 +12,24 @@ type DatasetDescriptorHashes struct {
 	MD5    string `yaml:"md5"`
 }
 
-type DatasetDescriptorVariants struct {
-	Name   string                  `yaml:"name"`
+type DatasetDescriptorData struct {
 	URL    string                  `yaml:"url"`
 	Hashes DatasetDescriptorHashes `yaml:"hashes"`
 }
 
-type DatasetDescriptorFiles struct {
-	Default  string                               `yaml:"default"`
-	Variants map[string]DatasetDescriptorVariants `yaml:"variants"`
+type DatasetDescriptorExtra struct {
+	ID          string                `yaml:"id"`
+	Name        string                `yaml:"name"`
+	Description string                `yaml:"description"`
+	Dataset     DatasetDescriptorData `yaml:"dataset"`
 }
 
 type DatasetDescriptor struct {
-	Name        string                 `yaml:"name"`
-	URL         string                 `yaml:"url"`
-	Description string                 `yaml:"description"`
-	Lisence     string                 `yaml:"lisence"`
-	Files       DatasetDescriptorFiles `yaml:"files"`
+	ID          string                            `yaml:"id"`
+	Name        string                            `yaml:"name"`
+	URL         string                            `yaml:"url"`
+	Description string                            `yaml:"description"`
+	Lisence     string                            `yaml:"lisence"`
+	Dataset     DatasetDescriptorData             `yaml:"dataset"`
+	Extras      map[string]DatasetDescriptorExtra `yaml:"extras"`
 }
