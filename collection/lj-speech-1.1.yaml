@@ -1,0 +1,14 @@
+# Description
+id: lj-speech-1.1
+name: The LJ Speech Dataset
+url: "https://keithito.com/LJ-Speech-Dataset/"
+description: "The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images."
+license: Public Domain
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/lj-speech-1.1/lj-speech-1.1.tar.gz"
+  hashes:
+    sha1: "186ac52a0107a8f6d1562798d9b56b17a738e049"
+    sha256: "6d1690cc76c7b50e4d2307c6a2fc514ed52fad241ffb8dd893898cd07179203a"
+    md5: "d2ae6940d257ebd9dec2f2996343456b"
