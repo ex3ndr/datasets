@@ -1,0 +1,14 @@
+# Description
+id: vctk-corpus-0.92
+name: CSTR VCTK Corpus
+url: "https://datashare.ed.ac.uk/handle/10283/3443"
+description: "This CSTR VCTK Corpus includes speech data uttered by 110 English speakers with various accents. Each speaker reads out about 400 sentences, which were selected from a newspaper, the rainbow passage and an elicitation paragraph used for the speech accent archive."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/vctk-corpus-0.92/vctk-corpus-0.92.tar.gz"
+  hashes:
+    sha1: "e22986130858324d829d47912a7d11ae0f5e083a"
+    sha256: "2744084147ef10c99ced0b3826157d62e8e71d20a5c26c907ad5f73854e61fc6"
+    md5: "470678c278a0844492b493dd9eb77dd4"
