@@ -1,4 +1,5 @@
 # Description
+id: cifar-100
 name: CIFAR-100
 url: "https://www.cs.toronto.edu/~kriz/cifar.html"
 description: "This dataset is just like the CIFAR-10, except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. "

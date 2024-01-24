@@ -1,16 +1,12 @@
 package sync
 
 import (
-	"archive/tar"
-	"compress/gzip"
 	"fmt"
-	"io"
-	"net/http"
 	"os"
 	"path/filepath"
-	"strings"
 
 	"github.com/ex3ndr/datasets/resolver"
+	"github.com/ex3ndr/datasets/utils"
 )
 
 func Sync(src ProjectFile) error {
@@ -54,7 +50,7 @@ func syncDataset(resolved resolver.Resolved, dir string) error {
 		fmt.Println("Directory " + target + " already exists. Skipping sync.")
 		return nil
 	}
-	fmt.Println("Downloading " + resolved.ID)
+	fmt.Println("Downloading " + resolved.ID + " from " + resolved.Endpoint)
 
 	// Create temporary directory
 	tempDir, err := os.MkdirTemp("", "datasets")
@@ -64,22 +60,8 @@ func syncDataset(resolved resolver.Resolved, dir string) error {
 	defer os.RemoveAll(tempDir)
 
 	// Downloading file
-	resp, err := http.Get(resolved.Endpoint)
-	if err != nil {
-		return err
-	}
-	defer resp.Body.Close()
-
-	// Create the file
 	tempFilePath := filepath.Join(tempDir, "download.tar.gz")
-	out, err := os.Create(tempFilePath)
-	if err != nil {
-		return err
-	}
-	defer out.Close()
-
-	// Write the data to file
-	_, err = io.Copy(out, resp.Body)
+	err = utils.DownloadFile(tempFilePath, resolved.Endpoint, resolved.ID)
 	if err != nil {
 		return err
 	}
@@ -91,53 +73,10 @@ func syncDataset(resolved resolver.Resolved, dir string) error {
 		panic(err)
 	}
 	defer file.Close()
-	err = unpackTarGz(file, target)
+	err = utils.UnpackTarGz(file, target, 1)
 	if err != nil {
 		return err
 	}
 
 	return nil
-}
-
-// unpackTarGz unpacks a tar.gz file to a specified destination, skipping the top-level directory
-func unpackTarGz(gzipStream io.Reader, dst string) error {
-	unzippedStream, err := gzip.NewReader(gzipStream)
-	if err != nil {
-		return err
-	}
-	defer unzippedStream.Close()
-
-	tarReader := tar.NewReader(unzippedStream)
-
-	for {
-		header, err := tarReader.Next()
-
-		switch {
-		case err == io.EOF:
-			return nil
-		case err != nil:
-			return err
-		case header == nil:
-			continue
-		}
-
-		target := filepath.Join(dst, strings.Join(strings.Split(header.Name, "/")[1:], "/"))
-
-		switch header.Typeflag {
-		case tar.TypeDir:
-			if err := os.MkdirAll(target, os.FileMode(header.Mode)); err != nil {
-				return err
-			}
-		case tar.TypeReg:
-			outFile, err := os.Create(target)
-			if err != nil {
-				return err
-			}
-			if _, err := io.Copy(outFile, tarReader); err != nil {
-				outFile.Close()
-				return err
-			}
-			outFile.Close()
-		}
-	}
 }
