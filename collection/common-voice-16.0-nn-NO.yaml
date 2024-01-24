@@ -1,0 +1,14 @@
+# Description
+id: common-voice-16.0-nn-NO
+name: "Common Voice 16.0 (nn-NO)"
+url: "https://commonvoice.mozilla.org"
+description: "Mozilla Common Voice is an initiative to help teach machines how real people speak."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-nn-NO.tar.gz"
+  hashes:
+    sha1: df8d5630ee759c3262193b8214f1ce3ac6dba81d
+    sha256: 25b3dcb40d78b4ae68eac3efd0127fcecb9ce3dab2686ccaa3f27cfbb8b9ef7c
+    md5: 8ff673a0b6d00a0ffb2d0bb5acce555c

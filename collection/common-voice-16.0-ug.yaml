@@ -1,0 +1,14 @@
+# Description
+id: common-voice-16.0-ug
+name: "Common Voice 16.0 (ug)"
+url: "https://commonvoice.mozilla.org"
+description: "Mozilla Common Voice is an initiative to help teach machines how real people speak."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ug.tar.gz"
+  hashes:
+    sha1: 7ad06137cf9c2ed84bbbc0e083a7176904d56ebc
+    sha256: 24a393d4c3641b30a93bfc96131a7773ef13d7a89473264aa9eb58c2ad78de8c
+    md5: 22e4d22f2c468fc5f94f05d73118aec4

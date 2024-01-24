@@ -1,0 +1,14 @@
+# Description
+id: common-voice-16.0-yue
+name: "Common Voice 16.0 (yue)"
+url: "https://commonvoice.mozilla.org"
+description: "Mozilla Common Voice is an initiative to help teach machines how real people speak."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-yue.tar.gz"
+  hashes:
+    sha1: e1f4cdf9fa960e411261290691f8287734c79bb8
+    sha256: 48ca933c5cb7ba7628c3db8a6399991313fe36f6519e7a46e1a07056dcb0d0cf
+    md5: 46ab0558005bf434fb3967ab833cfa3b

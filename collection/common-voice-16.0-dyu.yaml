@@ -1,0 +1,14 @@
+# Description
+id: common-voice-16.0-dyu
+name: "Common Voice 16.0 (dyu)"
+url: "https://commonvoice.mozilla.org"
+description: "Mozilla Common Voice is an initiative to help teach machines how real people speak."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-dyu.tar.gz"
+  hashes:
+    sha1: 22794b1748a389084b4106695a2e4125d9b335ec
+    sha256: 8ef2539b7b39633b87a71ace1dbfd9461546412877a5d697d9a0c5220c5b7f1e
+    md5: b921fe2f444d53266cf4e528d2f093b8
