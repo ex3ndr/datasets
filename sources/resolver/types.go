@@ -2,8 +2,8 @@ package resolver
 
 type Resolved struct {
 	ID       string
-	Name     string
 	Endpoint string
+	Location *string
 }
 
 type DatasetDescriptorHashes struct {

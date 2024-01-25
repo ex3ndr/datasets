@@ -4,6 +4,8 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
+	"os"
+	"path/filepath"
 	"regexp"
 	"strings"
 
@@ -14,8 +16,27 @@ func resolveHTTPDataset(dataset string) (*Resolved, error) {
 	return nil, errors.New("not implemented")
 }
 
-func resolveFileDataset(dataset string) (*Resolved, error) {
-	return nil, errors.New("not implemented")
+func resolveFileDataset(path string) (*Resolved, error) {
+
+	// Check if file exists
+	if _, err := os.Stat(path); os.IsNotExist(err) {
+		return nil, errors.New("file not found: " + path)
+	}
+
+	// Check if file is a tar.gz archive
+	if !strings.HasSuffix(strings.ToLower(path), ".tar.gz") {
+		return nil, errors.New("file is not a tar.gz archive: " + path)
+	}
+
+	// Get file name from path and without extension
+	name := filepath.Base(path)
+	name = name[:len(name)-7]
+
+	// Return resolved
+	return &Resolved{
+		ID:       name,
+		Endpoint: "file:" + path,
+	}, nil
 }
 
 func resolveGithubDataset(dataset string) (*Resolved, error) {
@@ -64,14 +85,12 @@ func resolveStandardDataset(dataset string) (*Resolved, error) {
 	if version != "" {
 		d := descriptor.Extras[version]
 		data = d.Dataset
-		name = d.Name
 		id = d.ID
 	}
 
 	// Resolving hashes
 	return &Resolved{
 		ID:       id,
-		Name:     name,
 		Endpoint: data.URL,
 	}, nil
 }

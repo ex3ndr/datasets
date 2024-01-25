@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/ex3ndr/datasets/resolver"
@@ -31,13 +32,13 @@ func doSync(src ProjectFile) error {
 
 	// Resolving datasets
 	fmt.Println(utils.Faint("[1/3]") + " 🔎  Resolving datasets...")
-	resolved := make([]resolver.Resolved, 0)
+	resolved := make([]*resolver.Resolved, 0)
 	for _, dataset := range src.Datasets {
 		resolve, err := resolver.ResolveDataset(dataset)
 		if err != nil {
 			return err
 		}
-		resolved = append(resolved, *resolve)
+		resolved = append(resolved, resolve)
 	}
 
 	// Fetching packages
@@ -51,7 +52,6 @@ func doSync(src ProjectFile) error {
 	defer os.RemoveAll(tempDir)
 
 	// Downloading files
-	downloaded := make([]string, 0)
 	for _, resolved := range resolved {
 
 		// Target directory
@@ -59,6 +59,13 @@ func doSync(src ProjectFile) error {
 
 		// Check if directory exists
 		if _, err := os.Stat(target); !os.IsNotExist(err) {
+			continue
+		}
+
+		// Check if file
+		if strings.HasPrefix(resolved.Endpoint, "file:") {
+			path := resolved.Endpoint[5:]
+			resolved.Location = &path
 			continue
 		}
 
@@ -70,26 +77,31 @@ func doSync(src ProjectFile) error {
 			return err
 		}
 		fmt.Println(utils.ClearLine() + "          " + utils.Success("success") + " " + resolved.ID)
-		downloaded = append(downloaded, resolved.ID)
+		resolved.Location = &tempFilePath
 	}
 
 	// Unpacking packages
 	fmt.Println(utils.Faint("[3/3]") + " 📦  Unpacking datasets...")
-	for _, dataset := range downloaded {
+	for _, resolved := range resolved {
+
+		// Check if unpack required
+		if resolved.Location == nil {
+			continue
+		}
 
 		// Create directory
-		target := filepath.Join("external_datasets", dataset)
+		target := filepath.Join("external_datasets", resolved.ID)
 
 		// File path
-		tempFilePath := filepath.Join(tempDir, dataset+".tar.gz")
+		tempFilePath := *resolved.Location
 
 		// Unpack file
-		err = utils.UnpackTarGz(tempFilePath, target, 1, "          "+dataset)
+		err = utils.UnpackTarGz(tempFilePath, target, 1, "          "+resolved.ID)
 		if err != nil {
-			fmt.Println(utils.ClearLine() + "          " + utils.Failure("failure") + " " + dataset)
+			fmt.Println(utils.ClearLine() + "          " + utils.Failure("failure") + " " + resolved.ID)
 			return err
 		}
-		fmt.Println(utils.ClearLine() + "          " + utils.Success("success") + " " + dataset)
+		fmt.Println(utils.ClearLine() + "          " + utils.Success("success") + " " + resolved.ID)
 	}
 
 	return nil

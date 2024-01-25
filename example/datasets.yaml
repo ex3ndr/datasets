@@ -5,4 +5,5 @@ datasets:
   # - common-voice-16.0-en
   - common-voice-16.0-af
   - common-voice-16.0-ckb
+  - "file:/Volumes/shared/datasets/common-voice/cv-corpus-16.0-2023-12-06-ast.tar.gz"
   # - common-voice-16.0-en
