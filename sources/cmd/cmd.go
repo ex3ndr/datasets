@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/ex3ndr/datasets/sync"
+	"github.com/ex3ndr/datasets/project"
+	"github.com/ex3ndr/datasets/resolver"
 	"github.com/spf13/cobra"
-	"gopkg.in/yaml.v3"
 )
 
 func initHandler(cmd *cobra.Command, args []string) error {
@@ -23,14 +23,13 @@ func syncHandler(cmd *cobra.Command, args []string) error {
 	}
 
 	// Parse datasets.yaml
-	var projectFile sync.ProjectFile
-	err = yaml.Unmarshal(d, &projectFile)
+	projectFile, err := project.UnmarshalProject(d)
 	if err != nil {
 		return err
 	}
 
 	// Sync datasets
-	sync.Sync(projectFile)
+	resolver.Sync(*projectFile)
 
 	return nil
 }

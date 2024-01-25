@@ -1,4 +1,4 @@
-package sync
+package resolver
 
 import (
 	"fmt"
@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ex3ndr/datasets/resolver"
+	"github.com/ex3ndr/datasets/project"
 	"github.com/ex3ndr/datasets/utils"
 )
 
-func Sync(src ProjectFile) {
+func Sync(src project.ProjectFile) {
 	start := time.Now()
 	error := doSync(src)
 	if error != nil {
@@ -22,7 +22,7 @@ func Sync(src ProjectFile) {
 	}
 }
 
-func doSync(src ProjectFile) error {
+func doSync(src project.ProjectFile) error {
 
 	// Create datasets directory if not exists
 	err := os.MkdirAll("external_datasets", 0755)
@@ -32,9 +32,9 @@ func doSync(src ProjectFile) error {
 
 	// Resolving datasets
 	fmt.Println(utils.Faint("[1/3]") + " 🔎  Resolving datasets...")
-	resolved := make([]*resolver.Resolved, 0)
+	resolved := make([]*Resolved, 0)
 	for _, dataset := range src.Datasets {
-		resolve, err := resolver.ResolveDataset(dataset)
+		resolve, err := ResolveDataset(dataset)
 		if err != nil {
 			return err
 		}
@@ -45,7 +45,7 @@ func doSync(src ProjectFile) error {
 	fmt.Println(utils.Faint("[2/3]") + " 🚚  Fetching datasets...")
 
 	// Create temporary directory
-	tempDir, err := os.MkdirTemp("", "datasets")
+	tempDir, err := os.MkdirTemp("", "datasets-")
 	if err != nil {
 		return err
 	}

@@ -9,14 +9,20 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/ex3ndr/datasets/project"
 	"gopkg.in/yaml.v3"
 )
 
-func resolveHTTPDataset(dataset string) (*Resolved, error) {
+type InternalResolved struct {
+	ID       *string
+	Endpoint string
+}
+
+func resolveHTTPDataset(dataset string) (*InternalResolved, error) {
 	return nil, errors.New("not implemented")
 }
 
-func resolveFileDataset(path string) (*Resolved, error) {
+func resolveFileDataset(path string) (*InternalResolved, error) {
 
 	// Check if file exists
 	if _, err := os.Stat(path); os.IsNotExist(err) {
@@ -29,25 +35,25 @@ func resolveFileDataset(path string) (*Resolved, error) {
 	}
 
 	// Get file name from path and without extension
-	name := filepath.Base(path)
-	name = name[:len(name)-7]
+	resolvedName := filepath.Base(path)
+	resolvedName = resolvedName[:len(resolvedName)-7]
 
 	// Return resolved
-	return &Resolved{
-		ID:       name,
+	return &InternalResolved{
+		ID:       &resolvedName,
 		Endpoint: "file:" + path,
 	}, nil
 }
 
-func resolveGithubDataset(dataset string) (*Resolved, error) {
+func resolveGithubDataset(dataset string) (*InternalResolved, error) {
 	return nil, errors.New("not implemented")
 }
 
-func resolveHugginFaceDataset(dataset string) (*Resolved, error) {
+func resolveHugginFaceDataset(dataset string) (*InternalResolved, error) {
 	return nil, errors.New("not implemented")
 }
 
-func resolveStandardDataset(dataset string) (*Resolved, error) {
+func resolveStandardDataset(dataset string) (*InternalResolved, error) {
 
 	// Resolve name and version
 	name := dataset
@@ -89,8 +95,8 @@ func resolveStandardDataset(dataset string) (*Resolved, error) {
 	}
 
 	// Resolving hashes
-	return &Resolved{
-		ID:       id,
+	return &InternalResolved{
+		ID:       &id,
 		Endpoint: data.URL,
 	}, nil
 }
@@ -110,32 +116,57 @@ func isValidStandartName(name string) bool {
 	return matched
 }
 
-func ResolveDataset(dataset string) (*Resolved, error) {
+func doResolveDataset(dataset project.DatasetReference) (*InternalResolved, error) {
 
 	// Local file
-	if strings.HasPrefix(dataset, "file:") {
-		return resolveFileDataset(dataset[5:])
+	if strings.HasPrefix(dataset.Source, "file:") {
+		return resolveFileDataset(dataset.Source[5:])
 	}
 
 	// Remote file
-	if strings.HasPrefix(dataset, "http://") || strings.HasPrefix(dataset, "https://") {
-		return resolveHTTPDataset(dataset)
+	if strings.HasPrefix(dataset.Source, "http://") || strings.HasPrefix(dataset.Source, "https://") {
+		return resolveHTTPDataset(dataset.Source)
 	}
 
 	// Github
-	if strings.HasPrefix(dataset, "github.com/") {
-		return resolveGithubDataset(dataset)
+	if strings.HasPrefix(dataset.Source, "github.com/") {
+		return resolveGithubDataset(dataset.Source)
 	}
 
 	// HuggingFace
-	if strings.HasPrefix(dataset, "huggingface.co") {
-		return resolveHugginFaceDataset(dataset)
+	if strings.HasPrefix(dataset.Source, "huggingface.co") {
+		return resolveHugginFaceDataset(dataset.Source)
 	}
 
 	// Standard
-	if isValidStandartName(dataset) {
-		return resolveStandardDataset(dataset)
+	if isValidStandartName(dataset.Source) {
+		return resolveStandardDataset(dataset.Source)
 	}
 
-	return nil, errors.New("unknown dataset type: " + dataset)
+	return nil, errors.New("unknown dataset type: " + dataset.Source)
+}
+
+func ResolveDataset(dataset project.DatasetReference) (*Resolved, error) {
+
+	// Internal resolve
+	ir, err := doResolveDataset(dataset)
+	if err != nil {
+		return nil, err
+	}
+
+	// Finalize
+	var id string
+	if ir.ID == nil && dataset.Name == nil {
+		return nil, errors.New("unable to resolve dataset name automatically, please provide it manually")
+	} else if dataset.Name != nil {
+		id = *dataset.Name
+	} else {
+		id = *ir.ID
+	}
+
+	// Return resolved
+	return &Resolved{
+		ID:       id,
+		Endpoint: ir.Endpoint,
+	}, nil
 }
