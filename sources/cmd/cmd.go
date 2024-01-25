@@ -30,10 +30,7 @@ func syncHandler(cmd *cobra.Command, args []string) error {
 	}
 
 	// Sync datasets
-	err = sync.Sync(projectFile)
-	if err != nil {
-		return err
-	}
+	sync.Sync(projectFile)
 
 	return nil
 }

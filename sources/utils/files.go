@@ -36,15 +36,34 @@ func DownloadFile(filepath string, url string, message string) error {
 	return err
 }
 
-func UnpackTarGz(gzipStream io.Reader, dst string, skip int) error {
-	unzippedStream, err := gzip.NewReader(gzipStream)
+func UnpackTarGz(src string, dst string, skip int, message string) error {
+
+	// Get file size
+	fileInfo, err := os.Stat(src)
+	if err != nil {
+		return err
+	}
+
+	// Open file
+	file, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	// Progress
+	bar := progressbar.DefaultBytes(fileInfo.Size(), message)
+	progressR := &ProgressReader{r: file, bar: bar}
+
+	// Unzip
+	unzippedStream, err := gzip.NewReader(progressR)
 	if err != nil {
 		return err
 	}
 	defer unzippedStream.Close()
 
+	// Tar reader
 	tarReader := tar.NewReader(unzippedStream)
-
 	for {
 
 		// Read next header
@@ -68,6 +87,15 @@ func UnpackTarGz(gzipStream io.Reader, dst string, skip int) error {
 				return err
 			}
 		case tar.TypeReg:
+
+			// Create directory if it does not exist
+			dir := filepath.Dir(target)
+			if _, err := os.Stat(dir); os.IsNotExist(err) {
+				if err := os.MkdirAll(dir, 0755); err != nil {
+					return err
+				}
+			}
+
 			outFile, err := os.Create(target)
 			if err != nil {
 				return err

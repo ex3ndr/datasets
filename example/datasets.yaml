@@ -1,3 +1,8 @@
 destination: "external_datasets"
 datasets:
-  - common-voice-16.0-en
+  - cifar-100
+  - cifar-10
+  # - common-voice-16.0-en
+  - common-voice-16.0-af
+  - common-voice-16.0-ckb
+  # - common-voice-16.0-en

@@ -44,6 +44,11 @@ func resolveStandardDataset(dataset string) (*Resolved, error) {
 	}
 	defer resp.Body.Close()
 
+	// Checking status
+	if resp.StatusCode != 200 {
+		return nil, errors.New("dataset " + name + " not found")
+	}
+
 	// Parsing descriptor
 	var descriptor DatasetDescriptor
 	err = yaml.NewDecoder(resp.Body).Decode(&descriptor)
