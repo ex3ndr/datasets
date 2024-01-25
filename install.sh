@@ -24,8 +24,13 @@ require() {
     echo $MISSING
 }
 
-# Check if the script is running on Linux
-[ "$(uname -s)" = "Linux" ] || error 'This script is intended to run on Linux only.'
+# Check if the script is running on Linux or MacOS
+SYS=$(uname -s)
+case "$SYS" in
+    Linux) SYS="linux" ;;
+    Darwin) SYS="darwin" ;;
+    *) error "Unsupported OS: $SYS" ;;
+esac
 
 # Check architecture
 ARCH=$(uname -m)
@@ -58,7 +63,7 @@ fi
 
 # Download tool
 status "Downloading datasets..."
-curl --fail --show-error --location --progress-bar -o $TEMP_DIR/datasets "https://github.com/ex3ndr/datasets/releases/latest/download/datasets-linux-$ARCH"
+curl --fail --show-error --location --progress-bar -o $TEMP_DIR/datasets "https://github.com/ex3ndr/datasets/releases/latest/download/datasets-$SYS-$ARCH"
 
 # Detecting installation directory
 for BINDIR in /usr/local/bin /usr/bin /bin; do
