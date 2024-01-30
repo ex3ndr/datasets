@@ -1,0 +1,47 @@
+# Description
+id: libritts-r
+name: LibriTTS-R
+url: "https://www.openslr.org/141/"
+description: "LibriTTS-R [1] is a sound quality improved version of the LibriTTS corpus (http://www.openslr.org/60/) which is a multi-speaker English corpus of approximately 585 hours of read English speech at 24kHz sampling rate, published in 2019. The constituent samples of LibriTTS-R are identical to those of LibriTTS, with only the sound quality improved."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/libritts-r/libritts-r-dev.tar.gz"
+  hashes:
+    sha1: "a2b4b554168029f2afc3802f307b0f7837581125"
+    sha256: "9684da3f2f4f29eb69b73468d84cb0f47c5271c5fba0df922e71b5c5211cce10"
+    md5: "449d96b4ff8d996e7ddb037b919f3360"
+
+# Extra
+extras:
+  clean-100:
+    id: libritts-r-clean-100
+    name: LibriTTS-R Clean (100)
+    description: "train-clean-100 dataset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/libritts-r/libritts-r-clean-100.tar.gz"
+      hashes:
+        sha1: "364bffc69e80674d289a7aaf8675ddeaa434de59"
+        sha256: "024ba02002635a70353fc1cc8b8ce4b92410cdc3239705f62f7fd7fad28b1963"
+        md5: "d877dade91d6084aa6d9ebb2a879fa86"
+  clean-360:
+    id: libritts-r-clean-360
+    name: LibriTTS-R Clean (360)
+    description: "train-clean-360 dataset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/libritts-r/libritts-r-clean-360.tar.gz"
+      hashes:
+        sha1: "f663ad2caf7e3e7924dfd10ab97d695f9c6b1263"
+        sha256: "fca0d821de292161ff7bd67e44208f18ea0b59d0ea10881310a8696eacc92141"
+        md5: "60fcd073f8f650667e041548f80d3560"
+  other-500:
+    id: libritts-r-other-500
+    name: LibriTTS-R Other (500)
+    description: "train-other-500 dataset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/libritts-r/libritts-r-other-500.tar.gz"
+      hashes:
+        sha1: "18a4489dfa3ec2f6822e3f9195807b4b27b80f0e"
+        sha256: "14eaaa01954c293e91350f7291bee4d6a6b0ab89b3b07bf076d3139b28aec898"
+        md5: "387c4698fecb6fc131f8ba75e611e5cd"
