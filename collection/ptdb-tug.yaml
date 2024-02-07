@@ -1,0 +1,14 @@
+# Description
+id: ptdb-tug
+name: PTDB-TUG
+url: "https://www.spsc.tugraz.at/databases-and-tools/ptdb-tug-pitch-tracking-database-from-graz-university-of-technology.html"
+description: "The Pitch Tracking Database from Graz University of Technology (PTDB-TUG) is a speech database for pitch tracking that provides microphone and laryngograph signals of 20 English native speakers as well as the extracted pitch trajectories as a reference. The subjects had to read 2342 phonetically rich sentences from the existing TIMIT corpus. This text material is available spoken by both, female and male speakers. In total, this database consists of 4720 recorded sentences. All recordings were carried out on-site at the recording studio of the Institue of Broadband Communications at Graz University of Technology."
+license: Open Database License
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/ptdb-tug/ptdb-tug.tar.gz"
+  hashes:
+    sha1: "9167812b0f47ba663cce64b76c1f301b6fed59f4"
+    sha256: "eefeeb94844bd6a01f209e499d0461f9158297acc98b848a22c84916c3e60091"
+    md5: "18e1754821bf3d53582a92705cd53d17"
