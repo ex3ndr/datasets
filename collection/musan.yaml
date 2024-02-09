@@ -1,0 +1,14 @@
+# Description
+id: musan
+name: MUSAN
+url: "https://www.openslr.org/17/"
+description: "MUSAN is a corpus of music, speech, and noise recordings."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/musan/musan.tar.gz"
+  hashes:
+    sha1: "ed46164bb167c3b8c55df97b2158249d80291e7b"
+    sha256: "9d1b234cb7b9128f1203cf4af7653aa84fa116ff8f23fdb8d969fd186e98d18d"
+    md5: "57dfeb892d8f54509868aa2d29dc8518"
