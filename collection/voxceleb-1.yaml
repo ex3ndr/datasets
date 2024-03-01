@@ -1,0 +1,27 @@
+# Description
+id: voxceleb-1
+name: "VoxCeleb #1"
+url: "https://www.robots.ox.ac.uk/~vgg/data/voxceleb/index.html"
+description: "VoxCeleb is an audio-visual dataset consisting of short clips of human speech, extracted from interview videos uploaded to YouTube"
+license: Unknown
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/voxceleb/vox1.tar.gz"
+  hashes:
+    sha1: "8d105707b0d60320d37db704cc93f899c21ec2b0"
+    sha256: "5005d916ff5dd61de0c92fbf6a15c548ba571acf1a1bfcd8dd7c1b10027a5e45"
+    md5: "24e00677eb76eaea7b52da01bc830776"
+
+# Extra
+extras:
+  full:
+    id: voxceleb-1-full
+    name: "Vox Celeb #1 Full"
+    description: "Full (dev) dataset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/voxceleb/vox1_full.tar.gz"
+      hashes:
+        sha1: "9cf74090dab3449f4c67f10c7b76a766deed4933"
+        sha256: "e89645f66986189107a4d708488062264743b852950ddcb42d634793efb4af70"
+        md5: "fe32fa28f3c937f4667856de0ca639c4"

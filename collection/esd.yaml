@@ -1,0 +1,14 @@
+# Description
+id: esd
+name: Emotional Speech Dataset
+url: "https://hltsingapore.github.io/ESD/index.html"
+description: "In this project, we first provide a review of the state-of-the-art emotional voice conversion research, and the existing emotional speech databases. We then motivate the development of a novel emotional speech database (ESD) that addresses the increasing research need."
+license: Non Commercial
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/esd/esd.tar.gz"
+  hashes:
+    sha1: "7ac652a2dc2d8816e890acdf608df0387fc66625"
+    sha256: "4ea11f7e6c98a20d06722528e3f120e2ab23620658b07de69e7fe08043be42e3"
+    md5: "aec12107dead322d19a05095adc1949f"
