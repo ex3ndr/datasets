@@ -16,6 +16,7 @@ import (
 type InternalResolved struct {
 	ID       *string
 	Endpoint string
+	Format   *string
 }
 
 func resolveHTTPDataset(dataset string) (*InternalResolved, error) {
@@ -97,6 +98,9 @@ func resolveStandardDataset(dataset string) (*InternalResolved, error) {
 		id = d.ID
 	}
 
+	// Loading format
+	format := descriptor.Dataset.Format
+
 	// Applying mirror
 	url := ResolveMirror(data.URL)
 
@@ -104,6 +108,7 @@ func resolveStandardDataset(dataset string) (*InternalResolved, error) {
 	return &InternalResolved{
 		ID:       &id,
 		Endpoint: url,
+		Format:   format,
 	}, nil
 }
 
@@ -172,8 +177,10 @@ func ResolveDataset(dataset project.DatasetReference) (*Resolved, error) {
 
 	// Format
 	var format string = "tar-gz"
-	if dataset.Format != nil {
+	if ir.Format == nil && dataset.Format != nil {
 		format = *dataset.Format
+	} else if ir.Format != nil {
+		format = *ir.Format
 	}
 
 	// Return resolved

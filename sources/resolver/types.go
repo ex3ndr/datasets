@@ -16,6 +16,7 @@ type DatasetDescriptorHashes struct {
 type DatasetDescriptorData struct {
 	URL    string                  `yaml:"url"`
 	Hashes DatasetDescriptorHashes `yaml:"hashes"`
+	Format *string                 `yaml:"format"`
 }
 
 type DatasetDescriptorExtra struct {

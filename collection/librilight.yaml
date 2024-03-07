@@ -1,0 +1,13 @@
+# Description
+id: librilight
+name: "Librilight"
+url: "https://github.com/facebookresearch/libri-light"
+description: "Libri-Light: A Benchmark for ASR with Limited or No Supervision"
+license: Unknown
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/liblilight/small.tar"
+  format: "tar"
+  hashes:
+    md5: "c49207eb86a8e8ac895561c37232041e"
