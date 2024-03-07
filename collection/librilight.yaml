@@ -7,7 +7,7 @@ license: Unknown
 
 # Dataset
 dataset:
-  url: "https://shared.korshakov.com/datasets/liblilight/small.tar"
+  url: "https://shared.korshakov.com/datasets/librilight/small.tar"
   format: "tar"
   hashes:
     md5: "c49207eb86a8e8ac895561c37232041e"
