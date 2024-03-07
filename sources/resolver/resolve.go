@@ -19,7 +19,10 @@ type InternalResolved struct {
 }
 
 func resolveHTTPDataset(dataset string) (*InternalResolved, error) {
-	return nil, errors.New("not implemented")
+	// Return resolved
+	return &InternalResolved{
+		Endpoint: dataset,
+	}, nil
 }
 
 func resolveFileDataset(path string) (*InternalResolved, error) {
@@ -94,10 +97,13 @@ func resolveStandardDataset(dataset string) (*InternalResolved, error) {
 		id = d.ID
 	}
 
+	// Applying mirror
+	url := ResolveMirror(data.URL)
+
 	// Resolving hashes
 	return &InternalResolved{
 		ID:       &id,
-		Endpoint: data.URL,
+		Endpoint: url,
 	}, nil
 }
 
