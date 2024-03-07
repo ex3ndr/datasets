@@ -96,12 +96,23 @@ func doSync(src project.ProjectFile) error {
 		tempFilePath := *resolved.Location
 
 		// Unpack file
-		err = utils.UnpackTarGz(tempFilePath, target, 1, "          "+resolved.ID)
-		if err != nil {
-			fmt.Println(utils.ClearLine() + "          " + utils.Failure("failure") + " " + resolved.ID)
-			return err
+		if resolved.Format == "tar-gz" {
+			err = utils.UnpackTarGz(tempFilePath, target, 1, "          "+resolved.ID)
+			if err != nil {
+				fmt.Println(utils.ClearLine() + "          " + utils.Failure("failure") + " " + resolved.ID)
+				return err
+			}
+			fmt.Println(utils.ClearLine() + "          " + utils.Success("success") + " " + resolved.ID)
+		} else if resolved.Format == "tar" {
+			err = utils.UnpackTar(tempFilePath, target, 1, "          "+resolved.ID)
+			if err != nil {
+				fmt.Println(utils.ClearLine() + "          " + utils.Failure("failure") + " " + resolved.ID)
+				return err
+			}
+			fmt.Println(utils.ClearLine() + "          " + utils.Success("success") + " " + resolved.ID)
+		} else {
+			return fmt.Errorf("unknown format: " + resolved.Format)
 		}
-		fmt.Println(utils.ClearLine() + "          " + utils.Success("success") + " " + resolved.ID)
 	}
 
 	return nil

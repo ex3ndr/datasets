@@ -13,6 +13,7 @@ type ProjectFile struct {
 type DatasetReference struct {
 	Source string
 	Name   *string
+	Format *string
 }
 
 func UnmarshalProject(d []byte) (*ProjectFile, error) {
@@ -43,11 +44,14 @@ func UnmarshalProject(d []byte) (*ProjectFile, error) {
 				node := datasets.Content[i]
 				var name *string
 				var source *string = nil
+				var format *string = nil
 				for j := 0; j < len(node.Content); j += 2 {
 					if node.Content[j].Value == "name" {
 						name = &node.Content[j+1].Value
 					} else if node.Content[j].Value == "source" {
 						source = &node.Content[j+1].Value
+					} else if node.Content[j].Value == "format" {
+						format = &node.Content[j+1].Value
 					} else {
 						return nil, fmt.Errorf("unknown key: %s", node.Content[j].Value)
 					}
@@ -55,7 +59,7 @@ func UnmarshalProject(d []byte) (*ProjectFile, error) {
 				if source == nil {
 					return nil, fmt.Errorf("source is required")
 				}
-				res.Datasets = append(res.Datasets, DatasetReference{Source: *source, Name: name})
+				res.Datasets = append(res.Datasets, DatasetReference{Source: *source, Name: name, Format: format})
 			} else {
 				return nil, fmt.Errorf("dataset must be a string or a mapping")
 			}

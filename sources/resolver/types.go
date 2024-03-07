@@ -4,6 +4,7 @@ type Resolved struct {
 	ID       string
 	Endpoint string
 	Location *string
+	Format   string
 }
 
 type DatasetDescriptorHashes struct {

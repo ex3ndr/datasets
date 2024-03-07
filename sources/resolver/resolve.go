@@ -170,9 +170,16 @@ func ResolveDataset(dataset project.DatasetReference) (*Resolved, error) {
 		id = *ir.ID
 	}
 
+	// Format
+	var format string = "tar-gz"
+	if dataset.Format != nil {
+		format = *dataset.Format
+	}
+
 	// Return resolved
 	return &Resolved{
 		ID:       id,
 		Endpoint: ir.Endpoint,
+		Format:   format,
 	}, nil
 }
