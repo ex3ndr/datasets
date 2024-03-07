@@ -3,7 +3,7 @@ NAME="$1"
 
 # Pack dataset
 mv dataset $NAME
-tar -zcf $NAME.tar.gz $NAME
+COPYFILE_DISABLE=1 tar -zcf $NAME.tar.gz $NAME
 mv $NAME dataset
 
 # Checksums without filename

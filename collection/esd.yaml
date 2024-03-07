@@ -9,6 +9,6 @@ license: Non Commercial
 dataset:
   url: "https://shared.korshakov.com/datasets/esd/esd.tar.gz"
   hashes:
-    sha1: "7ac652a2dc2d8816e890acdf608df0387fc66625"
-    sha256: "4ea11f7e6c98a20d06722528e3f120e2ab23620658b07de69e7fe08043be42e3"
-    md5: "aec12107dead322d19a05095adc1949f"
+    sha1: "0bb765acda1f427855248e5ca2531e2401fe7ea4"
+    sha256: "b95873141994c511e93d41e6ac6111999aea9c9a5001ce5d5d14d00c40184201"
+    md5: "57e8e289c65de8ac1619ee793bed0a97"
