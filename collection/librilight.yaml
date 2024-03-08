@@ -11,3 +11,23 @@ dataset:
   format: "tar"
   hashes:
     md5: "c49207eb86a8e8ac895561c37232041e"
+
+extras:
+  medium:
+    id: librilight-medium
+    name: Librilight Medium
+    description: "Medium slice with 5139 hours of records"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/librilight/medium.tar"
+      format: "tar"
+      hashes:
+        md5: "c75e7ac62471bfbf2db77528d62a9b74"
+  large:
+    id: librilight-large
+    name: Librilight Large
+    description: "Large slice with 51394 hours of records"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/librilight/large.tar"
+      format: "tar"
+      hashes:
+        md5: "4dfbac018f50b99797ece101fc9f0c30"
