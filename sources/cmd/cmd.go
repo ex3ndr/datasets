@@ -6,6 +6,7 @@ import (
 
 	"github.com/ex3ndr/datasets/project"
 	"github.com/ex3ndr/datasets/resolver"
+	"github.com/joho/godotenv"
 	"github.com/spf13/cobra"
 )
 
@@ -35,6 +36,11 @@ func syncHandler(cmd *cobra.Command, args []string) error {
 }
 
 func NewCLI() *cobra.Command {
+
+	// Load dotenv
+	godotenv.Overload()
+
+	// Set up logging
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 	cobra.EnableCommandSorting = false
 
