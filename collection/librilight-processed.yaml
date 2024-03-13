@@ -23,6 +23,6 @@ extras:
       url: "https://shared.korshakov.com/datasets/supervoice/librilight/librilight-medium-processed.tar"
       format: "tar"
       hashes:
-        md5: ""
+        md5: "f69d6b70f7ca4172df3ea396bc1d9fd2"
         sha1: "23b241fce6b048744cc428f191a05307d1b57051"
         sha256: "8fe2adc4344756c0dd7421c79cac83a5663cdec90047631cdc84fed691488259"
