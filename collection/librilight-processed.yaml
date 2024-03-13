@@ -1,0 +1,28 @@
+# Description
+id: librilight-processed
+name: "Librilight Processed"
+url: "https://github.com/ex3ndr/supervoice-dataset"
+description: "A preprocessed librilight dataset using whisper and montreal forced aligner"
+license: Unknown
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/supervoice/librilight/librilight-processed.tar"
+  format: "tar"
+  hashes:
+    md5: "77a46c62fa281965f0e33504a994c8c8"
+    sha1: "beb47616c788327e601a228da68ef9c8142af7a8"
+    sha256: "d6c65f6a2013464da38f3f92cab8afe2e9b267e4bac5d6f8041c8842c12202c0"
+
+extras:
+  medium:
+    id: librilight-medium-processed
+    name: Librilight Medium
+    description: "Medium slice of librilight"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/supervoice/librilight/librilight-medium-processed.tar"
+      format: "tar"
+      hashes:
+        md5: ""
+        sha1: "23b241fce6b048744cc428f191a05307d1b57051"
+        sha256: "8fe2adc4344756c0dd7421c79cac83a5663cdec90047631cdc84fed691488259"
