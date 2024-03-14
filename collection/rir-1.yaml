@@ -9,6 +9,6 @@ license: CC BY 4.0
 dataset:
   url: "https://shared.korshakov.com/datasets/supervoice/rir-1.tar.gz"
   hashes:
-    sha1: "a9d91786fd8fc117e30e26df98d2168870bd23e8"
-    sha256: "3a7c4a700be34d61a34862c4989eb4669faa79af8c61c267f70dabec4dfffecb"
-    md5: "30ba3b2de2ad7abd79afce1580d64cc0"
+    sha1: "b118b25e912aaa0423c00a3b68ac9066327c2e4a"
+    sha256: "c7e7f3d74024eb184b06c2f3c894d7f7f8e2f89f55dd5e613aba7ca05e20ccfb"
+    md5: "055a83098853d09939a15171d45a8a76"
