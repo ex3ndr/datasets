@@ -1,0 +1,14 @@
+# Description
+id: rir-1
+name: RIR-1
+url: "https://github.com/ex3ndr/supervoice"
+description: "RIR-1 is a combination of existing RIR datasets, preprocessed and normalized."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/supervoice/rir-1.tar.gz"
+  hashes:
+    sha1: "a9d91786fd8fc117e30e26df98d2168870bd23e8"
+    sha256: "3a7c4a700be34d61a34862c4989eb4669faa79af8c61c267f70dabec4dfffecb"
+    md5: "30ba3b2de2ad7abd79afce1580d64cc0"
