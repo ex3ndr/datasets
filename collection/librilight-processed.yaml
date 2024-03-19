@@ -10,9 +10,9 @@ dataset:
   url: "https://shared.korshakov.com/datasets/supervoice/librilight/librilight-processed.tar"
   format: "tar"
   hashes:
-    md5: "77a46c62fa281965f0e33504a994c8c8"
-    sha1: "beb47616c788327e601a228da68ef9c8142af7a8"
-    sha256: "d6c65f6a2013464da38f3f92cab8afe2e9b267e4bac5d6f8041c8842c12202c0"
+    md5: "1352eb107c710f639b0f1550713e1eec"
+    sha1: "a52d1c0e0eab61904556c4f6dfc2f47fbd97b048"
+    sha256: "5aa4f332bd09347be5491a3e7d5ddc2dbb2b849493bff65886c5f074529d769d"
 
 extras:
   medium:
