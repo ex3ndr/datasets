@@ -25,7 +25,7 @@ func Sync(src project.ProjectFile) {
 func doSync(src project.ProjectFile) error {
 
 	// Create datasets directory if not exists
-	err := os.MkdirAll("external_datasets", 0755)
+	err := os.MkdirAll(filepath.Join("external_datasets", ".downloads"), 0755)
 	if err != nil {
 		return err
 	}
@@ -45,7 +45,7 @@ func doSync(src project.ProjectFile) error {
 	fmt.Println(utils.Faint("[2/3]") + " 🚚  Fetching datasets...")
 
 	// Create temporary directory
-	tempDir, err := os.MkdirTemp("", "datasets-")
+	tempDir, err := os.MkdirTemp(filepath.Join("external_datasets", ".downloads"), "datasets-")
 	if err != nil {
 		return err
 	}
