@@ -3,7 +3,7 @@ id: librilight-processed
 name: "Librilight Processed"
 url: "https://github.com/ex3ndr/supervoice-dataset"
 description: "A preprocessed librilight dataset using whisper and montreal forced aligner"
-license: Unknown
+license: Public Domain
 
 # Dataset
 dataset:
@@ -26,3 +26,14 @@ extras:
         md5: "41c6facc523cdb7c1af57b2289a383c5"
         sha1: "a19a1b4baa5164fcc8d95a3d486131c1d4576018"
         sha256: "9c0e8546a2262e28dbdd17acd0e31e7edde2edaa3cc653028aac88905522f166"
+  large:
+    id: librilight-large-processed
+    name: Librilight Large
+    description: "Large slice of librilight"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/supervoice/librilight/librilight-large-processed.tar"
+      format: "tar"
+      hashes:
+        md5: ""
+        sha1: "d4803b9d176731f5cd80a1a5115c329c294dc2d0"
+        sha256: ""
