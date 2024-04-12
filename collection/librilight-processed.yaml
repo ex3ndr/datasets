@@ -34,6 +34,6 @@ extras:
       url: "https://shared.korshakov.com/datasets/supervoice/librilight/librilight-large-processed.tar"
       format: "tar"
       hashes:
-        md5: ""
+        md5: "7830b1e7732d437ea5ccb2a18e153ea4"
         sha1: "d4803b9d176731f5cd80a1a5115c329c294dc2d0"
-        sha256: ""
+        sha256: "aef46f9d4be11b6b9760c1069cd08d2252290601ebc60ae06bcc3ceea8a39aab"
