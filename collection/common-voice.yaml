@@ -1,0 +1,1214 @@
+# Description
+id: common-voice
+name: "Common Voice"
+url: "https://commonvoice.mozilla.org"
+description: "Mozilla Common Voice is an initiative to help teach machines how real people speak. Dataset is split to each language. Default dataset contains english subset."
+license: CC BY 4.0
+dataset:
+  url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-en.tar.gz"
+  hashes:
+    sha1: 07bcbbd8719518b5cff9aa369ac947f0b7623a07
+    sha256: 5e68caa8382d5771a3a17ea22ae46473ab7287cf89504f9d9a894900f4d06d43
+    md5: 4419c8655ab90dc6a3e662051fcfbb52
+extras:
+  16.0-ab:
+    id: common-voice-16.0-ab
+    name: "Common Voice 16.0 (ab)"
+    description: "v16.0 AB variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ab.tar.gz"
+      hashes:
+        sha1: 33ed9851a29b1c656d1ba4d50388f7730a5282ce
+        sha256: 6060e49d24556545ef2df2e1d0296a01b1da86d2e4a5e76cc75779fc1417df90
+        md5: 5925c486f3132ebb035fe5507385285b
+  16.0-af:
+    id: common-voice-16.0-af
+    name: "Common Voice 16.0 (af)"
+    description: "v16.0 AF variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-af.tar.gz"
+      hashes:
+        sha1: 098fc85d0ecc7264a65d1985fa3f5f27d0f4ff08
+        sha256: 8b5dfea788a4fd772efa5033013be022b1e9fb82840233e441508d44102a2993
+        md5: 9e55df9e87a0618a736ef290f9b264c7
+  16.0-am:
+    id: common-voice-16.0-am
+    name: "Common Voice 16.0 (am)"
+    description: "v16.0 AM variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-am.tar.gz"
+      hashes:
+        sha1: 00d6aebd585df70fdf4e719768dcae4795f0f4ed
+        sha256: ff46ab9f61a4b7a0a80dbd5be936dda1d747149c3cbf7870f8ba88e815e50edf
+        md5: 67601f34b5eb0d0ae5c98f6ce5f52bd6
+  16.0-ar:
+    id: common-voice-16.0-ar
+    name: "Common Voice 16.0 (ar)"
+    description: "v16.0 AR variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ar.tar.gz"
+      hashes:
+        sha1: 203d0cf1bf9264cde335b27b8e48ab00f23fd71a
+        sha256: 1d9cd14f2bd095ba5051528c96f9eb22cb7c1e86234109824a2d25cae51118e4
+        md5: 6ede325241c088d4504b20f578a27b2e
+  16.0-as:
+    id: common-voice-16.0-as
+    name: "Common Voice 16.0 (as)"
+    description: "v16.0 AS variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-as.tar.gz"
+      hashes:
+        sha1: 8bda15362fc2fff0ab9d23158b2a5a4c18b1b861
+        sha256: 1fa0c81538ffcf1ce3e64de1367df2e5c854fdcd5519593f3ab3f875c80dcf35
+        md5: 4a5a3aecb7eef7da48e978b420ffe3ab
+  16.0-ast:
+    id: common-voice-16.0-ast
+    name: "Common Voice 16.0 (ast)"
+    description: "v16.0 AST variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ast.tar.gz"
+      hashes:
+        sha1: 5376280f3a5b7091a43b5ab0c65418b6a2f7e696
+        sha256: a4418ed23d5d88a1d4e0b5da5059e281a4e1e0ea5ebe0c8ef9e190b28ad15dc4
+        md5: 8afa5e2214f4cb87c00924df66fe55e7
+  16.0-az:
+    id: common-voice-16.0-az
+    name: "Common Voice 16.0 (az)"
+    description: "v16.0 AZ variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-az.tar.gz"
+      hashes:
+        sha1: 4bd5db2558a4c195d7be6bb9b69f2c629f934de1
+        sha256: 2663480efab0faa1399566f6cc733efcc74acb059a5fd070eb443293388b54a0
+        md5: db05e5047fb0646bf3312b0e6940fe00
+  16.0-ba:
+    id: common-voice-16.0-ba
+    name: "Common Voice 16.0 (ba)"
+    description: "v16.0 BA variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ba.tar.gz"
+      hashes:
+        sha1: 6e671c81998adc257dbb5f473348049c01d08f05
+        sha256: c397114fd0918e839a2f599537b3498b967bc24ad8a064f2665cb8e2545e0023
+        md5: fdb7e145c90303504d3a66177e0759dd
+  16.0-bas:
+    id: common-voice-16.0-bas
+    name: "Common Voice 16.0 (bas)"
+    description: "v16.0 BAS variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-bas.tar.gz"
+      hashes:
+        sha1: 449d140b79cdf81b745581889870270f71ee1bf2
+        sha256: c29d8afa5763dd4c8254577333d8b597c0f8fb571619149da7200c5a1dfb445f
+        md5: 1ae4c6ffb229b6430a9b714caadb9f5a
+  16.0-be:
+    id: common-voice-16.0-be
+    name: "Common Voice 16.0 (be)"
+    description: "v16.0 BE variant"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-be.tar.gz"
+      hashes:
+        sha1: 5667d43dd1babf6e0d00588e9b15b166f4766f3d
+        sha256: 6c8e226a26e7fd7acbd4f4cd490b614b283dc9908ba660912bad68b4ad037247
+        md5: b07b3eac8b9564efd55d0ad7625fc925
+
+  16.0-bg:
+    id: common-voice-16.0-bg
+    name: Common Voice 16.0 (bg)
+    description: v16.0 bg variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-bg.tar.gz
+      hashes:
+        sha1: b503e542f72026331d23cdda57f6171a8659e5f4
+        sha256: 603819d87834b14b2019c72baa465ec54a862457128bc5813f6b5519dd6d7c9c
+        md5: 420beab2f73dde85c21fcd37f8f2ec17
+  16.0-bn:
+    id: common-voice-16.0-bn
+    name: Common Voice 16.0 (bn)
+    description: v16.0 bn variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-bn.tar.gz
+      hashes:
+        sha1: 876bccd7158d1eb02b147fdd3646ada92c01c90d
+        sha256: 8095091077507d63ce4a9f9462993b8cd60884256875679d93035118ccd4421f
+        md5: edfb77776a7ceec759a97bacca58b67e
+  16.0-br:
+    id: common-voice-16.0-br
+    name: Common Voice 16.0 (br)
+    description: v16.0 br variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-br.tar.gz
+      hashes:
+        sha1: ccd5d96c24ddfa46b518ba4bbb4ff23ede698805
+        sha256: 028e9a239baa8f7c0d480f8b124c1b25fcd68503a5bfa0f1e15e6cee2a4674d1
+        md5: c87c593b63c2f29c2689bf3566862494
+  16.0-ca:
+    id: common-voice-16.0-ca
+    name: Common Voice 16.0 (ca)
+    description: v16.0 ca variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ca.tar.gz
+      hashes:
+        sha1: 70d0b784ed8f75e85d66edad4c013a601f78457a
+        sha256: fc34f4479b1b87817ab2fca4be85012ac8c9ec1b1a9d318ecfffa35e1f3035fe
+        md5: 408fe3e5e118ac8d2ebe05222592e0d4
+  16.0-ckb:
+    id: common-voice-16.0-ckb
+    name: Common Voice 16.0 (ckb)
+    description: v16.0 ckb variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ckb.tar.gz
+      hashes:
+        sha1: ba6004928ee1dce0d6a5bd07bc26e69e08e08328
+        sha256: b1177e50c0fe9aa96f9b70e61018faf20f1e8488706f3cc99db4099180a91593
+        md5: 305962b57a35d3b7e553d8e226041290
+  16.0-cnh:
+    id: common-voice-16.0-cnh
+    name: Common Voice 16.0 (cnh)
+    description: v16.0 cnh variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-cnh.tar.gz
+      hashes:
+        sha1: 6113185408c7afbd3f68f4f15ccea3ee97aa1875
+        sha256: a0ec0205ffc140d60fa8588fd299499ed6e816d81899f38328f62a453d33b2cc
+        md5: 82729dfc74abc5f053e60cfa7ec0a4b0
+  16.0-cs:
+    id: common-voice-16.0-cs
+    name: Common Voice 16.0 (cs)
+    description: v16.0 cs variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-cs.tar.gz
+      hashes:
+        sha1: 419f8fd644bcbe1d64466d69bcae4712f519cbf0
+        sha256: 0eb70e60960358b2c0209124abd33f231fe636ce420f9468421aaa0513f304d3
+        md5: ce51173268b40b9bcdf8d363b6c84818
+  16.0-cv:
+    id: common-voice-16.0-cv
+    name: Common Voice 16.0 (cv)
+    description: v16.0 cv variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-cv.tar.gz
+      hashes:
+        sha1: ae6669da502836476178093d5ebebc3aff6f8c16
+        sha256: 9a2a865cc7d4ff8329a602cb188ff12e3002daaf8698ed9c2b91bd65e0a67612
+        md5: 471dd4ecfe131c2e189b4232d6a892b8
+  16.0-cy:
+    id: common-voice-16.0-cy
+    name: Common Voice 16.0 (cy)
+    description: v16.0 cy variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-cy.tar.gz
+      hashes:
+        sha1: 3a2757555b082d65b7b68778c10b6f7a96851edc
+        sha256: 51a1f7f868c6b77415bc6e837cb0faaf113af556be2967180e309ce6788c0d5e
+        md5: 38cbae2aed9ea52c92540596e3a2fec2
+  16.0-da:
+    id: common-voice-16.0-da
+    name: Common Voice 16.0 (da)
+    description: v16.0 da variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-da.tar.gz
+      hashes:
+        sha1: 8bef323e2b0a70766a71e3bbada39468b814ba52
+        sha256: 8abe54e66c87bc4f0d3bb04cb5445cf4dc94632907c8229b9efdf76914fcfbaf
+        md5: 9e5b6eebbf3db2ec86cade8c3f1dbe78
+  16.0-de:
+    id: common-voice-16.0-de
+    name: Common Voice 16.0 (de)
+    description: v16.0 de variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-de.tar.gz
+      hashes:
+        sha1: 571035ec360985a070bde6fa8e9efbfc83bbf82b
+        sha256: ccc03666e9aca2fb1fb7451eeee654edb845997e5d6c21aed29f24879fb6a8d5
+        md5: 9be013eb4df02fe6ce4a4eafc6815e54
+  16.0-dv:
+    id: common-voice-16.0-dv
+    name: Common Voice 16.0 (dv)
+    description: v16.0 dv variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-dv.tar.gz
+      hashes:
+        sha1: 4032318879501ed542661bea0b8932e69cc4410d
+        sha256: 8847e8c3aac0efa3231526db579e05e78b32f0c35f28ff87714fd9fa75242eec
+        md5: 4114837aaf3e6f04dd77b5e1116884c7
+  16.0-dyu:
+    id: common-voice-16.0-dyu
+    name: Common Voice 16.0 (dyu)
+    description: v16.0 dyu variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-dyu.tar.gz
+      hashes:
+        sha1: 22794b1748a389084b4106695a2e4125d9b335ec
+        sha256: 8ef2539b7b39633b87a71ace1dbfd9461546412877a5d697d9a0c5220c5b7f1e
+        md5: b921fe2f444d53266cf4e528d2f093b8
+  16.0-el:
+    id: common-voice-16.0-el
+    name: Common Voice 16.0 (el)
+    description: v16.0 el variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-el.tar.gz
+      hashes:
+        sha1: d0530f0ac333f92e11d2a606e97c09d104461f28
+        sha256: 197a6ba7cddcaac2044646118fc0faf5d932f0b691e81b17bdf11e9747c2eb40
+        md5: 21b700b594d9f1d2c5d5630424ef446f
+  16.0-en:
+    id: common-voice-16.0-en
+    name: Common Voice 16.0 (en)
+    description: v16.0 en variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-en.tar.gz
+      hashes:
+        sha1: 07bcbbd8719518b5cff9aa369ac947f0b7623a07
+        sha256: 5e68caa8382d5771a3a17ea22ae46473ab7287cf89504f9d9a894900f4d06d43
+        md5: 4419c8655ab90dc6a3e662051fcfbb52
+  16.0-eo:
+    id: common-voice-16.0-eo
+    name: Common Voice 16.0 (eo)
+    description: v16.0 eo variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-eo.tar.gz
+      hashes:
+        sha1: 2c0034c26cfb49be74ec5d6510bf6bc131570246
+        sha256: b33f6bab336da25ef0b774f57cb1c23517df11e6191ef1c3eda2da8a12e1ccfc
+        md5: 37d69fa71db6fb088980a351948db4aa
+  16.0-es:
+    id: common-voice-16.0-es
+    name: Common Voice 16.0 (es)
+    description: v16.0 es variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-es.tar.gz
+      hashes:
+        sha1: 1f5678721234322bf19b8a4b53b499dd4fb181bc
+        sha256: 4b35d41a1d29f9e794055b4304ec874d4e2d713c3d56a84aaf2d3832a95d2320
+        md5: d948f2b9479223c4de1d792f137d5bdf
+  16.0-et:
+    id: common-voice-16.0-et
+    name: Common Voice 16.0 (et)
+    description: v16.0 et variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-et.tar.gz
+      hashes:
+        sha1: 3c268b4a654aa158d63d33dfe0dc4fefe45d58b1
+        sha256: 99c3e9c31c74d759c899676bdc7abb556fc4e8529efd9973194ee2c0d51f8a28
+        md5: 35a798a4e842cb76982b6ac3c03bc1a6
+  16.0-eu:
+    id: common-voice-16.0-eu
+    name: Common Voice 16.0 (eu)
+    description: v16.0 eu variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-eu.tar.gz
+      hashes:
+        sha1: 3e40cf38c84046d8c0b3086b28bc835429574595
+        sha256: a64e6480267e7c82d7e29a0e73c85d872b3ec196f6b348568bcdc08a98325f4a
+        md5: 516af7d05979d38353947b70695f27ec
+  16.0-fa:
+    id: common-voice-16.0-fa
+    name: Common Voice 16.0 (fa)
+    description: v16.0 fa variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-fa.tar.gz
+      hashes:
+        sha1: f932e1569aa7b73c995c95fa8bfab73a817c2ee7
+        sha256: 56cdee3e96ed77e48567936e82843fa4d2b31dca0f292d652b6c5677536cfd1b
+        md5: bbadade2bce002d24a69b65d7007ffd0
+  16.0-fi:
+    id: common-voice-16.0-fi
+    name: Common Voice 16.0 (fi)
+    description: v16.0 fi variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-fi.tar.gz
+      hashes:
+        sha1: 5919e82932eb3517f40ba8d8423aff3066ef82c6
+        sha256: bb67c394c5386fb77df753a38befe988744b1d275d5d79f57dc30a7d0040f811
+        md5: 5f6102a689778750bd2472b40f42d95c
+  16.0-fr:
+    id: common-voice-16.0-fr
+    name: Common Voice 16.0 (fr)
+    description: v16.0 fr variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-fr.tar.gz
+      hashes:
+        sha1: ba337ca9fb3b707a9aebb0436dad7986cdda2e73
+        sha256: 51366fc068f7a5d1e4d79b5fc3d5990935b564b349de558e43b50a7075e821ac
+        md5: 4f241596eb4b816c1e45f97714cb299a
+  16.0-fy-NL:
+    id: common-voice-16.0-fy-NL
+    name: Common Voice 16.0 (fy-NL)
+    description: v16.0 fy-NL variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-fy-NL.tar.gz
+      hashes:
+        sha1: 9a0d03186e5af2069253f6d3ba41301dc543063a
+        sha256: 284393fad5d49dca5fb074a46644e0f8a38a73400a8f7d73e7ec65c66a83ec7f
+        md5: c9b54b859eb7f04e548134406ff7397a
+  16.0-ga-IE:
+    id: common-voice-16.0-ga-IE
+    name: Common Voice 16.0 (ga-IE)
+    description: v16.0 ga-IE variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ga-IE.tar.gz
+      hashes:
+        sha1: de95d42eee4ef8cded0c17783029de70cfbc6e26
+        sha256: b7ca4d8dbce7297945cdb81c569956c8511d555f72ed4895bb0d852c33c90055
+        md5: 81e1a1c65d0618e57581d227070df018
+  16.0-gl:
+    id: common-voice-16.0-gl
+    name: Common Voice 16.0 (gl)
+    description: v16.0 gl variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-gl.tar.gz
+      hashes:
+        sha1: 1dce880056354410befc6d54ef052beacd3c48e3
+        sha256: 66340d5d53acdd4c6de2026dbf25a40fb5eabc7c6bb1fa1c851376f27ae788e6
+        md5: 0ecd818f1ab4b31058dfbe7a4691145b
+  16.0-gn:
+    id: common-voice-16.0-gn
+    name: Common Voice 16.0 (gn)
+    description: v16.0 gn variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-gn.tar.gz
+      hashes:
+        sha1: 2c32323d66e392df729d0a39eaf9dcdea33387ed
+        sha256: 0f91cc76b30c394a363ad93fae1a5ecf3fd11ad17c16cce95adff2dd0093f5e0
+        md5: 3c685b077e048af78f541312fd63875c
+  16.0-ha:
+    id: common-voice-16.0-ha
+    name: Common Voice 16.0 (ha)
+    description: v16.0 ha variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ha.tar.gz
+      hashes:
+        sha1: 31613dae26116c4d5b94c6e4da33fcb31a50999e
+        sha256: 20e11292df1866d00997084dfac14b6fcc6758c3de04ccf60cec2747cfc28d5a
+        md5: b77450e714d8cec2d0fbb2652a36f57a
+  16.0-he:
+    id: common-voice-16.0-he
+    name: Common Voice 16.0 (he)
+    description: v16.0 he variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-he.tar.gz
+      hashes:
+        sha1: c0e4ae0df9ca90172176336aa8529a54b185855e
+        sha256: 1329717c6a625b8bd4fe61428f56e8c23de2e3e3b871872cd3c92f3b0d825041
+        md5: 17accde9aba4a53fb5398861c7a2a00a
+  16.0-hi:
+    id: common-voice-16.0-hi
+    name: Common Voice 16.0 (hi)
+    description: v16.0 hi variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-hi.tar.gz
+      hashes:
+        sha1: 2b94e4601ccee05cab2a824bad56ab34eb3ed0cf
+        sha256: 1a3a333a23c8aea39aabfcb6c3c6fb30d6c873ea67631058f6539e9bb28c757b
+        md5: e7fa8bbcecab397beeab80e4da22efc0
+  16.0-hsb:
+    id: common-voice-16.0-hsb
+    name: Common Voice 16.0 (hsb)
+    description: v16.0 hsb variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-hsb.tar.gz
+      hashes:
+        sha1: 94fe42217eaecda037d3216045f2d9bae0a17d56
+        sha256: 69b3e623ff6a617c5daa1fd8545cf94a34837c8f7a9720810541b4254dce29af
+        md5: 9f0c9264cd449c2f6c8d2e9b96d766f2
+  16.0-hu:
+    id: common-voice-16.0-hu
+    name: Common Voice 16.0 (hu)
+    description: v16.0 hu variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-hu.tar.gz
+      hashes:
+        sha1: 9329c1eb1f0fc05e9fdb9d41338e4c3976f677f7
+        sha256: 5632933d75c458fc10cdbed8a78ed7e09b1f4ac22a14aa9d42d1aa9f22497353
+        md5: bfae2a97b60ed2b64c16198bd750645d
+  16.0-hy-AM:
+    id: common-voice-16.0-hy-AM
+    name: Common Voice 16.0 (hy-AM)
+    description: v16.0 hy-AM variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-hy-AM.tar.gz
+      hashes:
+        sha1: a51253865668b7ee5bbaec6f0398c60764fd99d1
+        sha256: 5e2928823ada67a790da9ef88f128889f335204b83bdf9010a0516ea85503834
+        md5: 609d49bd97946c40054c6a8435146487
+  16.0-ia:
+    id: common-voice-16.0-ia
+    name: Common Voice 16.0 (ia)
+    description: v16.0 ia variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ia.tar.gz
+      hashes:
+        sha1: 932946b174710cd3b2dafeece6ebff084192d003
+        sha256: 2c6a12783d1c342def95a7ecc268f71515ebb08c9d49f8c4b3657bd92a0e2c5e
+        md5: 881f251f69bc52d08f543c8810f4e484
+  16.0-id:
+    id: common-voice-16.0-id
+    name: Common Voice 16.0 (id)
+    description: v16.0 id variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-id.tar.gz
+      hashes:
+        sha1: 0f054c9b8fe6eaa2eb0630d8018557eb61126399
+        sha256: 2d0603d8509c779e4e6b9d7278c4c7b59671b22452bacb55c311fd2dbb270d83
+        md5: 44f3ae4a5c462c0ebbeb72f910ea97ea
+  16.0-ig:
+    id: common-voice-16.0-ig
+    name: Common Voice 16.0 (ig)
+    description: v16.0 ig variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ig.tar.gz
+      hashes:
+        sha1: 06d977ce2075696863959aca4bb9edc569dfc06a
+        sha256: 66d99e155043e0bd8040a767f7d3634ad4866e7ffe14f310cfdcfd650d702a77
+        md5: f2c2cb2d622cc49189fa2c31bc49338a
+  16.0-is:
+    id: common-voice-16.0-is
+    name: Common Voice 16.0 (is)
+    description: v16.0 is variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-is.tar.gz
+      hashes:
+        sha1: 1ab835fc25bdd3f46a3f416472f09c79bfafb288
+        sha256: 4550c766b4988550a1308a1491e9a8244075948be6a387b21bbfe0da9a4d71cb
+        md5: 646a81ded4224d018333db8550a01899
+  16.0-it:
+    id: common-voice-16.0-it
+    name: Common Voice 16.0 (it)
+    description: v16.0 it variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-it.tar.gz
+      hashes:
+        sha1: 0be4a7fe7a908a8ef013d2f54fb6707e69a40e0e
+        sha256: 4f4b804424c85b4bf73c51159ebc3f5cba72b16d7d5029f358534f222cc0825d
+        md5: 090cd5fbb5320ea874d0f9aab7ebd8df
+  16.0-ja:
+    id: common-voice-16.0-ja
+    name: Common Voice 16.0 (ja)
+    description: v16.0 ja variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ja.tar.gz
+      hashes:
+        sha1: e1392c6bf1dc12dfc7cbc96788dc6a2a606dbb21
+        sha256: 9c01e239beb903f56a098d45c04206486cd8de008bb187025baa495407636dbf
+        md5: 4c08d60ed30a066f3b27fb53f6e6537a
+  16.0-ka:
+    id: common-voice-16.0-ka
+    name: Common Voice 16.0 (ka)
+    description: v16.0 ka variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ka.tar.gz
+      hashes:
+        sha1: 81f8bf1e4ce81f96184a1e0fb258c885a052a1be
+        sha256: a83818f08a14f272f67880a316c59d22c93a1ff428de3ef24cf17891ae2a1f36
+        md5: 7314cc960253c3efded2a0c5ef0b7901
+  16.0-kab:
+    id: common-voice-16.0-kab
+    name: Common Voice 16.0 (kab)
+    description: v16.0 kab variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-kab.tar.gz
+      hashes:
+        sha1: 1bd20cc92ee502245f4d4504f1c48043d60fc51c
+        sha256: 487091a1df40b966031c20b803ac1638b17cab0ed51d9de98301b150554c1661
+        md5: 078316b244b7e7aa048f144891a72ada
+  16.0-kk:
+    id: common-voice-16.0-kk
+    name: Common Voice 16.0 (kk)
+    description: v16.0 kk variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-kk.tar.gz
+      hashes:
+        sha1: 6e092fdba8d96273daf26acfe2772c9a86431a8c
+        sha256: 732841bfcce8c24cdb4c8d123bbda8507611659c30bf240c8c0a7499966b152e
+        md5: 22acb406dfe4f495f9f067ff88076b92
+  16.0-kmr:
+    id: common-voice-16.0-kmr
+    name: Common Voice 16.0 (kmr)
+    description: v16.0 kmr variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-kmr.tar.gz
+      hashes:
+        sha1: ebd386a76d930bf423c96fc95209fc334e9ae1c9
+        sha256: 69e82368ca97e280bd3818edb86fc4599947b62844f917f4a8708b1d08449c32
+        md5: dc362e58c7b1e5415a930a61976041e3
+  16.0-ko:
+    id: common-voice-16.0-ko
+    name: Common Voice 16.0 (ko)
+    description: v16.0 ko variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ko.tar.gz
+      hashes:
+        sha1: 04f06a6c771b6e5ceb6d3c4017378e044a9fa200
+        sha256: 01d219e9251fbe4e635767a7f52acb0820b1a8e6f3b86b71dc242321697f2b94
+        md5: 801584559261523311792f768e4e4292
+  16.0-ky:
+    id: common-voice-16.0-ky
+    name: Common Voice 16.0 (ky)
+    description: v16.0 ky variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ky.tar.gz
+      hashes:
+        sha1: 8261197835755d9619f79edc5ffef551287b53f5
+        sha256: a4b8555ccd802d0363ded7142b3ce0005a3bdacaaf3be2f28bb7247180d47800
+        md5: 48ad1629686800fb88c6fe1b6531d2d6
+  16.0-lg:
+    id: common-voice-16.0-lg
+    name: Common Voice 16.0 (lg)
+    description: v16.0 lg variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-lg.tar.gz
+      hashes:
+        sha1: 766cda03a09d089bc57c7bafe35bab6c2e625bc1
+        sha256: 5041e3db16b88c9740a6f11ed8ba8cdd2199858602680b2aa04267485e069aec
+        md5: b8c3009ba330f4fb5ae0c87d10d8875f
+  16.0-lij:
+    id: common-voice-16.0-lij
+    name: Common Voice 16.0 (lij)
+    description: v16.0 lij variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-lij.tar.gz
+      hashes:
+        sha1: 7ab2195a8786d4a1509763c7c437d86aa62a6a9e
+        sha256: e571e1b293e021fb152388ad3ca797f98d94b2bd41e93cd673423b25b723fffc
+        md5: 2487b07ca50a757a1a7c040a9ea40fda
+  16.0-lo:
+    id: common-voice-16.0-lo
+    name: Common Voice 16.0 (lo)
+    description: v16.0 lo variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-lo.tar.gz
+      hashes:
+        sha1: 85e980021f146f5329e44e5e7b1a53fd978eba89
+        sha256: 802adaee6beccca4d80b1690e1264823db8ea0905ca128ebcb301f00e78e8b25
+        md5: fff3109a1e1c5027dde032ee0131d759
+  16.0-lt:
+    id: common-voice-16.0-lt
+    name: Common Voice 16.0 (lt)
+    description: v16.0 lt variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-lt.tar.gz
+      hashes:
+        sha1: 3f3acf6049dd7d7a803a447f0c7ef3ca3581824c
+        sha256: d36297b821cdede07ab04f2fa572af4126c9034a5b0f5001910b72032e818ce4
+        md5: ae5a0ac739fa6b7843edb6c4d4829a5f
+  16.0-ltg:
+    id: common-voice-16.0-ltg
+    name: Common Voice 16.0 (ltg)
+    description: v16.0 ltg variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ltg.tar.gz
+      hashes:
+        sha1: aa3a13ee70cecdb5fd1fe86097ef52a3f7e3e9dc
+        sha256: afb0f301c89ab9368bebef1a17510e41370ed6d1c2aca8de8e747b0d1baf29a7
+        md5: 5d0f05d53d499d9b347c2db81c47dd8a
+  16.0-lv:
+    id: common-voice-16.0-lv
+    name: Common Voice 16.0 (lv)
+    description: v16.0 lv variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-lv.tar.gz
+      hashes:
+        sha1: d541f1b66033cfbcc2155a12820c5ff988fbb50a
+        sha256: f61a385159ff5c48abe181fbc7f4a6ecb1c6ced43a18169152a6bddd108e5739
+        md5: 3200ffa736485260db850420bb6b6e21
+  16.0-mdf:
+    id: common-voice-16.0-mdf
+    name: Common Voice 16.0 (mdf)
+    description: v16.0 mdf variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-mdf.tar.gz
+      hashes:
+        sha1: 5124eccd12752205ac95e6250d52e2c47708c6c3
+        sha256: d0f5564500df035dbcfddaca1bd378ae3b2c58b78595b6cf19fcb579f9c7ee01
+        md5: 195ce08ba98e303b24e57720c328ce87
+  16.0-mhr:
+    id: common-voice-16.0-mhr
+    name: Common Voice 16.0 (mhr)
+    description: v16.0 mhr variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-mhr.tar.gz
+      hashes:
+        sha1: efeb47ecc9a6a64e9967f79be16e757fdf099ac9
+        sha256: 6c81af4632f7bc50201eed6ddeee0ff3dea050378e0503bd1f2644208e75956a
+        md5: 0563ca8c0b42c21ccaca4f990487f432
+  16.0-mk:
+    id: common-voice-16.0-mk
+    name: Common Voice 16.0 (mk)
+    description: v16.0 mk variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-mk.tar.gz
+      hashes:
+        sha1: dbbeaf4defa99f8ff788995fe9939049d71f6954
+        sha256: d093d60c634b6afbd9793ff15dc21f1397328e72cff851d75697045e60a513a8
+        md5: 7eab70f8c31601b9d317a1def27efd92
+  16.0-ml:
+    id: common-voice-16.0-ml
+    name: Common Voice 16.0 (ml)
+    description: v16.0 ml variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ml.tar.gz
+      hashes:
+        sha1: 586be29d08b5570bcde5b34c16b4c607ddda6c4a
+        sha256: dd888c487089b950c56531d3381b9a614759b372651baad0864aace7fdd8763a
+        md5: d3cb66a404cb5f848e993021a83b39e8
+  16.0-mn:
+    id: common-voice-16.0-mn
+    name: Common Voice 16.0 (mn)
+    description: v16.0 mn variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-mn.tar.gz
+      hashes:
+        sha1: b1f256ddecc42292c19ecd0d1371873ec69cb2e1
+        sha256: 1498c94142ddd270f4ce2bdae512dfe31bb1d2a8a56cfd90cfdc1ee97dc335d7
+        md5: eb3ca765348b3cf9fcdaec8851cc0b39
+  16.0-mr:
+    id: common-voice-16.0-mr
+    name: Common Voice 16.0 (mr)
+    description: v16.0 mr variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-mr.tar.gz
+      hashes:
+        sha1: 75a393c532fbbbb01644e453e096a1e24cb44c94
+        sha256: dc84fae317848aeb0fba1de5ce98cc1fa0e2ffca3979a9da443ab29c131a19b9
+        md5: b7d4846806043834fd07331d815598a8
+  16.0-mrj:
+    id: common-voice-16.0-mrj
+    name: Common Voice 16.0 (mrj)
+    description: v16.0 mrj variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-mrj.tar.gz
+      hashes:
+        sha1: ad7fa610bfab5ff1b364d104f4cec6072178f50e
+        sha256: e17a5a9cc476e78fca6b9146f5e2b51a435dc7e3192861aa9adb398a852dc635
+        md5: e43d4f9b12758c8ad74c8220075677fb
+  16.0-mt:
+    id: common-voice-16.0-mt
+    name: Common Voice 16.0 (mt)
+    description: v16.0 mt variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-mt.tar.gz
+      hashes:
+        sha1: cb1d925a4f8ebc9f22697f0180d9d2781708ff00
+        sha256: 9b41d39dbd48f9a6bd9a7d109367c62ed51468ec81246c37e6f2c1f5c6c1ae61
+        md5: 2e6fdb3835bb8b0b415fd2cd4a355295
+  16.0-myv:
+    id: common-voice-16.0-myv
+    name: Common Voice 16.0 (myv)
+    description: v16.0 myv variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-myv.tar.gz
+      hashes:
+        sha1: ddf168077d1f88e5e3f438535fc9a591a61783df
+        sha256: 8edc0e9a5ee2d02591dab6c63c9501ae5b3c98de38f9e14a3013c1cefde3abfb
+        md5: bba6c524af63f911a15016415692b8df
+  16.0-nan-tw:
+    id: common-voice-16.0-nan-tw
+    name: Common Voice 16.0 (nan-tw)
+    description: v16.0 nan-tw variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-nan-tw.tar.gz
+      hashes:
+        sha1: c9b48c2b81638fb44150df061ac046394bae5db5
+        sha256: e959cdab92843b162761c0216e7a4ff318de268e32fd45b327a0e5d37acff31a
+        md5: 83d087ddb93fe31d1d1bfe624982ea44
+  16.0-ne-NP:
+    id: common-voice-16.0-ne-NP
+    name: Common Voice 16.0 (ne-NP)
+    description: v16.0 ne-NP variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ne-NP.tar.gz
+      hashes:
+        sha1: 2a4375406955d47bfe43b6e6a3256272b856cfc4
+        sha256: e97f5d3e09741117d3897bb44e402d1a922e285fd02b76f9c3f570fb9fe3aa36
+        md5: 95882572837a0b1e1f32d39c976ba6af
+  16.0-nhi:
+    id: common-voice-16.0-nhi
+    name: Common Voice 16.0 (nhi)
+    description: v16.0 nhi variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-nhi.tar.gz
+      hashes:
+        sha1: 58abaa2efe030c13d0616733b66924ad4b170123
+        sha256: bba2b79e9be9ef5723f9ecfbc8ecd2dae0d80dadb3ddcf807355d11a9a20c2d4
+        md5: 75d063cd03c86884644089f2c9f34112
+  16.0-nl:
+    id: common-voice-16.0-nl
+    name: Common Voice 16.0 (nl)
+    description: v16.0 nl variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-nl.tar.gz
+      hashes:
+        sha1: a5155a39fcede5bb72e2b519f6558c2b3a396553
+        sha256: 4a7bce5c16c2610c24df45e79a0fa3dbb4b66a465931a2f3012b803e1bfee189
+        md5: 6c6323636e490b88ae6aa70eb59d555a
+  16.0-nn-NO:
+    id: common-voice-16.0-nn-NO
+    name: Common Voice 16.0 (nn-NO)
+    description: v16.0 nn-NO variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-nn-NO.tar.gz
+      hashes:
+        sha1: df8d5630ee759c3262193b8214f1ce3ac6dba81d
+        sha256: 25b3dcb40d78b4ae68eac3efd0127fcecb9ce3dab2686ccaa3f27cfbb8b9ef7c
+        md5: 8ff673a0b6d00a0ffb2d0bb5acce555c
+  16.0-oc:
+    id: common-voice-16.0-oc
+    name: Common Voice 16.0 (oc)
+    description: v16.0 oc variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-oc.tar.gz
+      hashes:
+        sha1: eaeff126551ca69291c3021e8ae778ed32fda552
+        sha256: d0e482f786b008c806bf2299891c689965c546e50e418386fb7f9fda9bf2e5ac
+        md5: ba287d6e7b0973abcc5313364fd393c5
+  16.0-or:
+    id: common-voice-16.0-or
+    name: Common Voice 16.0 (or)
+    description: v16.0 or variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-or.tar.gz
+      hashes:
+        sha1: f2504537a81e8a74f04008ddde2567eff72fa633
+        sha256: 85abd55f5c0dda07e868f987fcb914136699fcc18dd1230f3be85103e219fb18
+        md5: f91e6fb4eb1b6c2d2b4d8eeb0d490495
+  16.0-os:
+    id: common-voice-16.0-os
+    name: Common Voice 16.0 (os)
+    description: v16.0 os variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-os.tar.gz
+      hashes:
+        sha1: fa50a5d141146ba58ecbc67cf8c87c3b5bcb5f1f
+        sha256: 0f7d679d688ac8a33746dc0554c6bd9a302d6b9db97bf8c9ba5335ca65ce89a0
+        md5: 6ef244fff35f6b28b22268a55bfeefdc
+  16.0-pa-IN:
+    id: common-voice-16.0-pa-IN
+    name: Common Voice 16.0 (pa-IN)
+    description: v16.0 pa-IN variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-pa-IN.tar.gz
+      hashes:
+        sha1: f6ec01d7287efff62f978485b976dea3e17d9fda
+        sha256: 172e9a84d62f91700fe046318c3c44da7ba0d2e11ec8e5b3c8a083bbfe8c584a
+        md5: 13dafa90c129216631d96831c3064e1d
+  16.0-pl:
+    id: common-voice-16.0-pl
+    name: Common Voice 16.0 (pl)
+    description: v16.0 pl variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-pl.tar.gz
+      hashes:
+        sha1: 300f66f6327a870e1cd6496727342ea3d7fa72ab
+        sha256: 5c9327a3acf133c2a89791863735701a43d0cf390574682f2b42043731553aee
+        md5: 443ef55eb2a3afa944b6848235120ede
+  16.0-ps:
+    id: common-voice-16.0-ps
+    name: Common Voice 16.0 (ps)
+    description: v16.0 ps variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ps.tar.gz
+      hashes:
+        sha1: 3bd7e895f7ea4c83a402bcc8a65818452cd34ba4
+        sha256: 21251166a16e5e2a341fb94c428786501da3435b655fc50ea950ab6a1188bade
+        md5: 8f799f053cdef33ddde2ab038dc5183f
+  16.0-pt:
+    id: common-voice-16.0-pt
+    name: Common Voice 16.0 (pt)
+    description: v16.0 pt variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-pt.tar.gz
+      hashes:
+        sha1: 3b4fb0a9abce2b6e12ae2394c21ff38096aafd76
+        sha256: 92f836083c884c6c5d82f99b966a796280ea7427b5d8ffc471e6daef4d160496
+        md5: ba4e42c215ea00471cad415eae5fc159
+  16.0-quy:
+    id: common-voice-16.0-quy
+    name: Common Voice 16.0 (quy)
+    description: v16.0 quy variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-quy.tar.gz
+      hashes:
+        sha1: e774178031e8ebca40759ce0926fd0b692f6d4e5
+        sha256: 40e0c940d911bf407aecf6dabd565a42c6ea4528ffdd0dba5311114672cda16b
+        md5: 04d09dfbc0980790e4a1050eb09020d5
+  16.0-rm-sursilv:
+    id: common-voice-16.0-rm-sursilv
+    name: Common Voice 16.0 (rm-sursilv)
+    description: v16.0 rm-sursilv variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-rm-sursilv.tar.gz
+      hashes:
+        sha1: 637eee5266197c7c2bdb0ec229dbd9a6807821ad
+        sha256: f966e74d43e7effe5d83f17bc60f41c0988b8e02ae56c9fad1866aee8ee5c377
+        md5: c79654b74f92c434b470651742c8c3a4
+  16.0-rm-vallader:
+    id: common-voice-16.0-rm-vallader
+    name: Common Voice 16.0 (rm-vallader)
+    description: v16.0 rm-vallader variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-rm-vallader.tar.gz
+      hashes:
+        sha1: c4bd69ddf3f29424215e54f3f82804b00caa479f
+        sha256: 699b6bc058b5ac981a1eda0c57f75383ec6e8a9bacacf5f9338938bbc61b650a
+        md5: 1282978d17e35fb83be0ff8580d1f123
+  16.0-ro:
+    id: common-voice-16.0-ro
+    name: Common Voice 16.0 (ro)
+    description: v16.0 ro variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ro.tar.gz
+      hashes:
+        sha1: fae90a6cf2a6a4c99a359b098fa168a62b9b3778
+        sha256: 99dbcb56bc6f71d6829c7e5ed3bc63a48b8712a275ccb9d2a622d74e0d9fa028
+        md5: 80d8afc4e93d0ff76623ffedaf9e3775
+  16.0-ru:
+    id: common-voice-16.0-ru
+    name: Common Voice 16.0 (ru)
+    description: v16.0 ru variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ru.tar.gz
+      hashes:
+        sha1: 9f21f90f88ec09d28eaef5d6801e1dbc0246fad0
+        sha256: 5cd3cd80d03ffdde58a9b9c34ed5204aa282061bdaf4ada695fe4d4c0032256b
+        md5: c7bb3427f4e013bb1b06eb929e507888
+  16.0-rw:
+    id: common-voice-16.0-rw
+    name: Common Voice 16.0 (rw)
+    description: v16.0 rw variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-rw.tar.gz
+      hashes:
+        sha1: 7b1e4d63b883d9007e1ef7f0bac471c4f48c6dba
+        sha256: 9223c670a31d20f88bbb03ad48d1ea5cfcaf45cabbe2e745b46eb91b07005f2f
+        md5: 913d1e81eab3672cc0591e659a9bc327
+  16.0-sah:
+    id: common-voice-16.0-sah
+    name: Common Voice 16.0 (sah)
+    description: v16.0 sah variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sah.tar.gz
+      hashes:
+        sha1: 207ce87941d426691de79d1b23c082533489f983
+        sha256: 92895445170d6f84aa6e280a150a56222caaa5110b3bcf0be21861107c80396d
+        md5: c4422aca4db6041d63a5c3a6573718d2
+  16.0-sat:
+    id: common-voice-16.0-sat
+    name: Common Voice 16.0 (sat)
+    description: v16.0 sat variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sat.tar.gz
+      hashes:
+        sha1: a73bb34ca4bc7bcc9f8df9a6e9bff4eac4ce4b17
+        sha256: 181cef4d140dfd77d72ccdc74c21fb60f5deef2bd307af31053002d305df48e9
+        md5: 9840e7e390a214e24a323bc92908997b
+  16.0-sc:
+    id: common-voice-16.0-sc
+    name: Common Voice 16.0 (sc)
+    description: v16.0 sc variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sc.tar.gz
+      hashes:
+        sha1: d7614305448ab96d5e211593f1768430bca74e52
+        sha256: 8524dcd3e541886cbce984c651530d8250ba436ef8f97c70bd3f60b993bfcd7e
+        md5: c06decead057cd42e65b90c8074dd92a
+  16.0-sk:
+    id: common-voice-16.0-sk
+    name: Common Voice 16.0 (sk)
+    description: v16.0 sk variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sk.tar.gz
+      hashes:
+        sha1: 2f64435c685fd5475c7d5048675580a3d6434947
+        sha256: ead14cbb4006ea41612c7f1a1357d70bd57bd2865421ff6270f74c5628b605b7
+        md5: bc291d378724a5da038edcb800758786
+  16.0-skr:
+    id: common-voice-16.0-skr
+    name: Common Voice 16.0 (skr)
+    description: v16.0 skr variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-skr.tar.gz
+      hashes:
+        sha1: 5c256d04e15c373a23c8ca59c4863221c5c2b765
+        sha256: c03e2ad9c9186ddda5592fec4ff4476905a19b2f5a7a05b12572f9e4a4426b65
+        md5: a0dc54f34ba91da76c3eaa1787f9a538
+  16.0-sl:
+    id: common-voice-16.0-sl
+    name: Common Voice 16.0 (sl)
+    description: v16.0 sl variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sl.tar.gz
+      hashes:
+        sha1: 83f0dbcc9c1604d4b1587f126777a7c92eb43c49
+        sha256: 90f3302145af431285728416214c4f93d116526de6d7feabdf518ecea74bdf62
+        md5: 4c5dcb76907ab5cc5c648adb074f1742
+  16.0-sq:
+    id: common-voice-16.0-sq
+    name: Common Voice 16.0 (sq)
+    description: v16.0 sq variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sq.tar.gz
+      hashes:
+        sha1: d448dbe652cd294d1ca9cb9787f40da6ea97019d
+        sha256: 0ede8f11bc7d9c391712bc2b2502d275e8d5de3f35c0444d35b6f32f8e620cbc
+        md5: dc8e221828a09eba337b3e05150424f1
+  16.0-sr:
+    id: common-voice-16.0-sr
+    name: Common Voice 16.0 (sr)
+    description: v16.0 sr variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sr.tar.gz
+      hashes:
+        sha1: 5a0c448278ca31c3318771ea4279016e57b1caae
+        sha256: ed5b6a13e37ed376a6009a6fe08679dd6e352a03c1d5b3107613a044b320d873
+        md5: df5cd5e149a2c44bf691b5dbc7be4076
+  16.0-sv-SE:
+    id: common-voice-16.0-sv-SE
+    name: Common Voice 16.0 (sv-SE)
+    description: v16.0 sv-SE variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sv-SE.tar.gz
+      hashes:
+        sha1: de354bf5a9e1b73900e1a94c538cfbe3330d8324
+        sha256: 54e05050118bc577fce8317ddabb0732fc0eb7bf33e0effe0e4c749344f01449
+        md5: 844cdc435c184efef111285804ec10a2
+  16.0-sw:
+    id: common-voice-16.0-sw
+    name: Common Voice 16.0 (sw)
+    description: v16.0 sw variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-sw.tar.gz
+      hashes:
+        sha1: f9b5400f51439ef3f0c73f039230ac60fdb96505
+        sha256: c915e358d5cce8f546feaea7cf0a4cbec7fd44d24614490fbf9fb11f620cb582
+        md5: a7fb63afcb84e52bb41e888f2c947f15
+  16.0-ta:
+    id: common-voice-16.0-ta
+    name: Common Voice 16.0 (ta)
+    description: v16.0 ta variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ta.tar.gz
+      hashes:
+        sha1: d0c1863506ae8544eb826613e7aa39456261d5f9
+        sha256: 5c9173f81474e6e487697fb95c8b1d637daeeb8090949e44108f93519f33d324
+        md5: 57aace11589dba16d5a4ccc158cb861d
+  16.0-te:
+    id: common-voice-16.0-te
+    name: Common Voice 16.0 (te)
+    description: v16.0 te variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-te.tar.gz
+      hashes:
+        sha1: b9e99ab7ca2a9128c6db782009f7096d1d6642fd
+        sha256: 97848253c09b79badfc5d5a76e5dc737c1920fc1633c2d6b9fa17e3959938062
+        md5: e9b3f8b090cffc95d057de00341fdb53
+  16.0-th:
+    id: common-voice-16.0-th
+    name: Common Voice 16.0 (th)
+    description: v16.0 th variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-th.tar.gz
+      hashes:
+        sha1: 0a1d17ef559bc0c8c10a0022202a77d43458a3bc
+        sha256: 3cfc9410ad46e7ee599887da9694bcbaeea1802748c40394f5136ac0154977d8
+        md5: 800686854c59b9fe2030b49844fdb3bd
+  16.0-ti:
+    id: common-voice-16.0-ti
+    name: Common Voice 16.0 (ti)
+    description: v16.0 ti variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ti.tar.gz
+      hashes:
+        sha1: aa22f710f0bab61c41303626d1f1c0b105238d80
+        sha256: 49688db338fe2901ef2caea79c6737bdf232b91c9a0f639ea93519e4edd4e2a1
+        md5: fd51ba672c11f9497a9ae7eb01b651c4
+  16.0-tig:
+    id: common-voice-16.0-tig
+    name: Common Voice 16.0 (tig)
+    description: v16.0 tig variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-tig.tar.gz
+      hashes:
+        sha1: 274c25f049720381de9a933fc8dae3574282999a
+        sha256: 757ce85483b3ac517347741cdea4bca9c8d6a4cf60f51668f6c0f7aaffc08974
+        md5: 1c8f50d5eef4776343a1337fd9c424f8
+  16.0-tk:
+    id: common-voice-16.0-tk
+    name: Common Voice 16.0 (tk)
+    description: v16.0 tk variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-tk.tar.gz
+      hashes:
+        sha1: 16cd97f3cf01d339e6183fe99806fda648aebce1
+        sha256: 38bd83d8a5aea5bc6e1ee2490401ce4d9c38d6cf879fe99cd03cd52b9f002fa0
+        md5: 0ca439ad5839a7f9c4e6c85262142c02
+  16.0-tok:
+    id: common-voice-16.0-tok
+    name: Common Voice 16.0 (tok)
+    description: v16.0 tok variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-tok.tar.gz
+      hashes:
+        sha1: 9adbbf7572d2b455f956ce56342d4d20aa79cc6a
+        sha256: b6244c1af27c9802e464be8b53377222942d3f2f9a18e1e11085e8f7ad953172
+        md5: f4d98f24b7eaa2349a13aee8f4d4cc47
+  16.0-tr:
+    id: common-voice-16.0-tr
+    name: Common Voice 16.0 (tr)
+    description: v16.0 tr variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-tr.tar.gz
+      hashes:
+        sha1: 2a469b3c7beff11caf29593d952a0c41cc353046
+        sha256: b2ee0968129b2d88a63ea615abedc2de58dbcdde10b97310729b78f20fc6935d
+        md5: a277a53f9eca091d05560c1825e8d8e7
+  16.0-tt:
+    id: common-voice-16.0-tt
+    name: Common Voice 16.0 (tt)
+    description: v16.0 tt variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-tt.tar.gz
+      hashes:
+        sha1: fbe11f80a24783333622a56e7072bdf746bed72d
+        sha256: 3a5dfd30914fe5d123a7c390a3f919fd75ba02aa16fb9ce3bbb5ce256b0274ae
+        md5: 27d2a6168d1f4275dea414a14cce112c
+  16.0-tw:
+    id: common-voice-16.0-tw
+    name: Common Voice 16.0 (tw)
+    description: v16.0 tw variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-tw.tar.gz
+      hashes:
+        sha1: 9774ae67c02e7733b25e6f831474d239f83bfb1f
+        sha256: 596948b15566752927de29f21e8dc8035a5435dc8ec7d458e9dcf8d5392ca1cc
+        md5: 28a89f23a47c6bce9155c13811472abc
+  16.0-ug:
+    id: common-voice-16.0-ug
+    name: Common Voice 16.0 (ug)
+    description: v16.0 ug variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ug.tar.gz
+      hashes:
+        sha1: 7ad06137cf9c2ed84bbbc0e083a7176904d56ebc
+        sha256: 24a393d4c3641b30a93bfc96131a7773ef13d7a89473264aa9eb58c2ad78de8c
+        md5: 22e4d22f2c468fc5f94f05d73118aec4
+  16.0-uk:
+    id: common-voice-16.0-uk
+    name: Common Voice 16.0 (uk)
+    description: v16.0 uk variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-uk.tar.gz
+      hashes:
+        sha1: 09060a679a2bfdf28f1f7ff55008c803729b0d86
+        sha256: 47a3b4de88e0466e36f38e573ace4853a5374f90a80ab93dac2ef7f54cf09177
+        md5: a08ccf3c35391cd508dae5f43c951664
+  16.0-ur:
+    id: common-voice-16.0-ur
+    name: Common Voice 16.0 (ur)
+    description: v16.0 ur variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-ur.tar.gz
+      hashes:
+        sha1: 34ae828e3640290202567de20342cbe42325002e
+        sha256: 838e861e9b54f73387ea0413db79910a56682c2668b1ee0801080be56b894d47
+        md5: 172f4472e6ec5601f2018ba8645ad105
+  16.0-uz:
+    id: common-voice-16.0-uz
+    name: Common Voice 16.0 (uz)
+    description: v16.0 uz variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-uz.tar.gz
+      hashes:
+        sha1: acdbd379cbb1e5e73c32abae8cc6796c1ff85707
+        sha256: e5765c64bddf7ebea0d44fcf40a9570e0fa9dfb3fce8e3e054bd1a43d9c87a7c
+        md5: 225155564b3e06e8d277d225dba3d395
+  16.0-vi:
+    id: common-voice-16.0-vi
+    name: Common Voice 16.0 (vi)
+    description: v16.0 vi variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-vi.tar.gz
+      hashes:
+        sha1: 4bc2e94089c65eea74837202ef9a21b17e1fcd4a
+        sha256: 8a092bb88926918abb37e22cad29a502152df5a63e7387109d65672a493f2106
+        md5: c42a0e744da90867aad72ba2d22caaf4
+  16.0-vot:
+    id: common-voice-16.0-vot
+    name: Common Voice 16.0 (vot)
+    description: v16.0 vot variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-vot.tar.gz
+      hashes:
+        sha1: fbf6936af10ad4f0f62fd31817787894c6f37c7a
+        sha256: 85b9b89167e72d83f0dcf335ce59f8423aca87cd78587349e029321f0d58e200
+        md5: fc5d0f0f9fbf32aa73787a12a1807ece
+  16.0-yi:
+    id: common-voice-16.0-yi
+    name: Common Voice 16.0 (yi)
+    description: v16.0 yi variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-yi.tar.gz
+      hashes:
+        sha1: f48db36ec03cc8a44347e3c658c6f5b0e991e800
+        sha256: a5bfd312cc184bca1c2d25e77ac31cc71901b7548f7f9a67520c30cb742f9724
+        md5: 6d73e4bc7eed038e2a7fce17e4e93958
+  16.0-yo:
+    id: common-voice-16.0-yo
+    name: Common Voice 16.0 (yo)
+    description: v16.0 yo variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-yo.tar.gz
+      hashes:
+        sha1: d92d17c2956b255bce46b86546c7f636d84c4d9e
+        sha256: 76884ad1e9e8da1e19adc013dd9be8726c9b6592923de1ac038e49b29b8ca21e
+        md5: 5e82a82aa33637db9b702a577637da01
+  16.0-yue:
+    id: common-voice-16.0-yue
+    name: Common Voice 16.0 (yue)
+    description: v16.0 yue variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-yue.tar.gz
+      hashes:
+        sha1: e1f4cdf9fa960e411261290691f8287734c79bb8
+        sha256: 48ca933c5cb7ba7628c3db8a6399991313fe36f6519e7a46e1a07056dcb0d0cf
+        md5: 46ab0558005bf434fb3967ab833cfa3b
+  16.0-zgh:
+    id: common-voice-16.0-zgh
+    name: Common Voice 16.0 (zgh)
+    description: v16.0 zgh variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-zgh.tar.gz
+      hashes:
+        sha1: f8dadc0cad27d1f7dc4d54db5c58c07a992b305e
+        sha256: 98d2087eac2b54ee140c76ba62f63c74c6bf1b01876f36b8108589cf7da5abf9
+        md5: 388310da642b63d211e7d1292586ab5b
+  16.0-zh-CN:
+    id: common-voice-16.0-zh-CN
+    name: Common Voice 16.0 (zh-CN)
+    description: v16.0 zh-CN variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-zh-CN.tar.gz
+      hashes:
+        sha1: 2b5fd13b306144bd5d6433dc22d97b8a95454c20
+        sha256: 7f06e6d149b191cc6a1a244faf1653cadbf30d19e5d74fdb7f2dca501096e567
+        md5: 8c5928681c942cd515ebe3b06e327d0a
+  16.0-zh-HK:
+    id: common-voice-16.0-zh-HK
+    name: Common Voice 16.0 (zh-HK)
+    description: v16.0 zh-HK variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-zh-HK.tar.gz
+      hashes:
+        sha1: 0c7ae779fe95c668bd4e44e7a75c22462889df55
+        sha256: bfdc745e77c356fd8cb0ad905758c624a2d7c1f0870351d0e817aa6ba0adcbb3
+        md5: d9d7e2b0cd180097e179c4f147650c68
+  16.0-zh-TW:
+    id: common-voice-16.0-zh-TW
+    name: Common Voice 16.0 (zh-TW)
+    description: v16.0 zh-TW variant
+    dataset:
+      url: https://shared.korshakov.com/datasets/common-voice/cv-corpus-16.0-2023-12-06-zh-TW.tar.gz
+      hashes:
+        sha1: ab44ebc134dd7c025c33d753fd91faa7ca78b84f
+        sha256: 9b8d69d8e01bcf605c8c9c4ba0bc63cd959f7eb5099b0cb1ac1ccd13a6d2e155
+        md5: 83c4a8a1c31b41c7cc1270da5dc22bc9
