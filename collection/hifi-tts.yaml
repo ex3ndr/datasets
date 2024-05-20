@@ -1,0 +1,14 @@
+# Description
+id: hifi-tts
+name: HiFi TTS
+url: "https://www.openslr.org/109/"
+description: "Hi-Fi Multi-Speaker English TTS Dataset (Hi-Fi TTS) is a multi-speaker English dataset for training text-to-speech models. The dataset is based on public audiobooks from LibriVox and texts from Project Gutenberg."
+license: CC BY 4.0
+
+# Dataset
+dataset:
+  url: "https://shared.korshakov.com/datasets/hifi-tts/hifi-tts.tar.gz"
+  hashes:
+    sha1: "72790c0a7257e15ff5b290e596842e11d7e4abfe"
+    sha256: "ed7d533a1a38b5ea971265f61dbd1f88a2ff30a8bbb40194d48aefed7a0bafa9"
+    md5: "08d6fbba87945dba8cbd4350efac1b83"
