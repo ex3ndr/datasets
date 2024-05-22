@@ -9,3 +9,24 @@ dataset:
     sha1: "dca690906a499af87b4360bc726c41bc3e2aa441"
     sha256: "dd79fd878bcf0faa250a918e13e8f1f0a19463ce1dc29bc343c3a55d0fa72329"
     md5: "7cdba8fba3f6421500aa84131a0bc693"
+extras:
+  competition:
+    id: voices-competition
+    name: "VOiCES Competition subset"
+    description: "Competition subset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/voices/VOiCES_competition.tar.gz"
+      hashes:
+        sha1: "e02dc4bd911cc4d661a78599e77943fc553e1660"
+        sha256: "19131a57dbc7bde09f4e884eac9610da40e20daf3f57a147fcacaf329dc50ef7"
+        md5: "274b3ca918ecf7816d6c24fc9dc88f2c"
+  full:
+    id: voices-full
+    name: "VOiCES Full Training subset"
+    description: "Full subset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/voices/VOiCES_release.tar.gz"
+      hashes:
+        sha1: "f5fe14144077b80b8324a2bf7d7eacc1249f55eb"
+        sha256: "39bec7d0e1a7ce0e82380c4f2c3a78f4c20617c7dc66e2b4a025b6fd5085aa29"
+        md5: "b6f98980a621e17ff35531724c0ac6a3"
