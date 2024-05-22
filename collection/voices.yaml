@@ -1,0 +1,11 @@
+id: voices
+name: "The VOiCES Corpus"
+url: "https://iqtlabs.github.io/voices/"
+description: "The Voices Obscured in Complex Environmental Settings (VOiCES) corpus is a creative commons speech dataset targeting acoustically challenging and reverberant environments with robust labels and truth data for transcription, denoising, and speaker identification."
+license: CC BY 4.0
+dataset:
+  url: "https://shared.korshakov.com/datasets/voices/VOiCES_devkit.tar.gz"
+  hashes:
+    sha1: "dca690906a499af87b4360bc726c41bc3e2aa441"
+    sha256: "dd79fd878bcf0faa250a918e13e8f1f0a19463ce1dc29bc343c3a55d0fa72329"
+    md5: "7cdba8fba3f6421500aa84131a0bc693"
