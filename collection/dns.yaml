@@ -20,13 +20,13 @@ extras:
         sha1: "f9b0fe16be1a797a60db881c6521d1a043b9a7ff"
         sha256: "9f1aa23b32c8bda2bba17093eb5eba525947604946ca17312ba83d7e55871e0d"
         md5: "c781a2b51253e886defbc8cfc52d9828"
-#   full:
-#     id: voices-full
-#     name: "VOiCES Full Training subset"
-#     description: "Full subset"
-#     dataset:
-#       url: "https://shared.korshakov.com/datasets/voices/VOiCES_release.tar.gz"
-#       hashes:
-#         sha1: "f5fe14144077b80b8324a2bf7d7eacc1249f55eb"
-#         sha256: "39bec7d0e1a7ce0e82380c4f2c3a78f4c20617c7dc66e2b4a025b6fd5085aa29"
-#         md5: "b6f98980a621e17ff35531724c0ac6a3"
+  noise:
+    id: dns-noise
+    name: "DNS Noise"
+    description: "Noise subset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/dns/dns_noise.tar.gz"
+      hashes:
+        sha1: "e61d34211c01b725942bfbe1f0e21b5ee2e0c84a"
+        sha256: "9e363df1d819f0d8477596ed23bf8b71038af6f1348e97936c1dd12f1d80bd92"
+        md5: "7d2e9fc867e433976ae325e05b10a85c"
