@@ -30,3 +30,13 @@ extras:
         sha1: "e61d34211c01b725942bfbe1f0e21b5ee2e0c84a"
         sha256: "9e363df1d819f0d8477596ed23bf8b71038af6f1348e97936c1dd12f1d80bd92"
         md5: "7d2e9fc867e433976ae325e05b10a85c"
+  clean:
+    id: dns-clean
+    name: "DNS Clean"
+    description: "Clean subset"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/dns/dns_clean.tar.gz"
+      hashes:
+        sha1: "d8550aa6d32b89f3c176d26e726d5330660c698b"
+        sha256: "e177fb1210434930f80582e095d1cbc6a877701443de14086889f7e08ef95553"
+        md5: "8f540e10e5fd6086726c6f8555410d60"
