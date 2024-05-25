@@ -35,7 +35,8 @@ extras:
     name: "DNS Clean"
     description: "Clean subset"
     dataset:
-      url: "https://shared.korshakov.com/datasets/dns/dns_clean.tar.gz"
+      url: "https://shared.korshakov.com/datasets/dns/dns_clean.tar"
+      format: "tar"
       hashes:
         sha1: "d8550aa6d32b89f3c176d26e726d5330660c698b"
         sha256: "e177fb1210434930f80582e095d1cbc6a877701443de14086889f7e08ef95553"
