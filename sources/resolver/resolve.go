@@ -34,8 +34,8 @@ func resolveFileDataset(path string) (*InternalResolved, error) {
 	}
 
 	// Check if file is a tar.gz archive
-	if !strings.HasSuffix(strings.ToLower(path), ".tar.gz") {
-		return nil, errors.New("file is not a tar.gz archive: " + path)
+	if !strings.HasSuffix(strings.ToLower(path), ".tar.gz") && !strings.HasSuffix(strings.ToLower(path), ".tar") {
+		return nil, errors.New("file is not a tar or tar.gz archive: " + path)
 	}
 
 	// Get file name from path and without extension
