@@ -7,6 +7,6 @@ dataset:
   url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy.tar"
   format: "tar"
   hashes:
-    sha1: "f12f1df5bfc57f5a07fdcdde2d6942e317f24036"
-    sha256: 2841b58c4f2ae90a3de072fd64468776650ab4df685a4bdfd2397a6251f362ca
-    md5: "f13d275626e21af0289d230338121fb9"
+    sha1: "4b8d904b929ded8c582e0afe0d76ef10acc365f4"
+    sha256: 7291e1651b7bd2be73a5e9a22bfdce80087f8021622843799776015d4719f8fa
+    md5: "a8a72d52b1c0f8ab02f7c3b94936d58e"
