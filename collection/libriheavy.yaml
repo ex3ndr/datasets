@@ -1,5 +1,5 @@
-id: libriliheavy
-name: "Libriliheavy"
+id: libriheavy
+name: "libriheavy"
 url: "https://github.com/k2-fsa/libriheavy"
 description: "Libriheavy: a 50,000 hours ASR corpus with punctuation casing and context for more details."
 license: Unknown
