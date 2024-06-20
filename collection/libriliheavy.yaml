@@ -1,0 +1,12 @@
+id: libriliheavy
+name: "Libriliheavy"
+url: "https://github.com/k2-fsa/libriheavy"
+description: "Libriheavy: a 50,000 hours ASR corpus with punctuation casing and context for more details."
+license: Unknown
+dataset:
+  url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy.tar"
+  format: "tar"
+  hashes:
+    sha1: "c3aae94880a62ad1cf3da6fd842a8b5b9500c908"
+    sha256: a1c1291a3b7905069c1de56a5b9cd746ee8c0186be09cc978eae8cc306e362e4
+    md5: "b566ef5d279aeeecb83eca3f1ca50044"
