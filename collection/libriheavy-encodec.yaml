@@ -1,0 +1,23 @@
+id: libriheavy-encodec
+name: "Libriheavy Encodec"
+url: "https://github.com/ex3ndr/supervoice-librilight-encodec"
+description: "Encoded with Encodec Libriheavy"
+license: Unknown
+
+dataset:
+  url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-encodec.tar.gz"
+  hashes:
+    sha1: "967545b70da96d981aa03e113d1ba3c0fe1c99f6"
+    sha256: "9c02a05c88bfe545f801ae2249006c610b23855400aef0f389886061d063a89c"
+    md5: "e34d3b14c70a81d61626ec6f8bcc8cea"
+extras:
+  medium:
+    id: libriheavy-medium-encodec
+    name: Libriheavy Medium
+    description: "Medium slice of Libriheavy"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-medium-encodec.tar.gz"
+      hashes:
+        md5: "d0780bb3de6f8b4497e4e13a00f3dae9"
+        sha1: "fe1892b6835a3843ca8efd6122ab2fb201a96e12"
+        sha256: "d9b84bc535b1f3ae3a10615244c3ade744b2a85a4a5e68f8fa599fb015036e9b"
