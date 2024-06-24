@@ -7,9 +7,9 @@ license: Unknown
 dataset:
   url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-encodec.tar.gz"
   hashes:
-    sha1: "967545b70da96d981aa03e113d1ba3c0fe1c99f6"
-    sha256: "9c02a05c88bfe545f801ae2249006c610b23855400aef0f389886061d063a89c"
-    md5: "e34d3b14c70a81d61626ec6f8bcc8cea"
+    sha1: "4c8a7167912fe56bfc93fce3321e14f2aefb45f7"
+    sha256: "17be0b188fe97db9adf8159e3d1c7af1d7eefaf8d85c7ca70a7446171a9d48f0"
+    md5: "ebb9ed518729428e89c79f6f8ac4cdbe"
 extras:
   medium:
     id: libriheavy-medium-encodec
@@ -18,6 +18,6 @@ extras:
     dataset:
       url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-medium-encodec.tar.gz"
       hashes:
-        md5: "d0780bb3de6f8b4497e4e13a00f3dae9"
-        sha1: "fe1892b6835a3843ca8efd6122ab2fb201a96e12"
-        sha256: "d9b84bc535b1f3ae3a10615244c3ade744b2a85a4a5e68f8fa599fb015036e9b"
+        sha1: "d0799ffb6d1809fa7e0f63ab315b963576bd17c1"
+        sha256: "2f9af6b40cd42d2edf5a0f13e0c7258f823e4ca29594cbf32f9916ce36f92d31"
+        md5: "12cb50414d4a66f8e3c2d2cca731d651"
