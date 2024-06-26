@@ -21,3 +21,13 @@ extras:
         sha1: "d0799ffb6d1809fa7e0f63ab315b963576bd17c1"
         sha256: "2f9af6b40cd42d2edf5a0f13e0c7258f823e4ca29594cbf32f9916ce36f92d31"
         md5: "12cb50414d4a66f8e3c2d2cca731d651"
+  large:
+    id: libriheavy-large-encodec
+    name: Libriheavy Large
+    description: "Large slice of Libriheavy"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-large-encodec.tar.gz"
+      hashes:
+        sha1: "ac9cb380334a265347f58fb46673405bc1f398ec"
+        sha256: "1e139d6c0c53215b67dc814c0739f63140ce452e79d3f5e2259689cf8818bacf"
+        md5: "ee98df62c06f59781e5db77555477854"
