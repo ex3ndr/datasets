@@ -1,5 +1,7 @@
 # ✨ Datasets
 
+Feel free to join my [Discord Server](https://discord.gg/DK8b9AUGRa) to discuss this tool!
+
 A simple tool for reproducable dataset gathering for machine learning tasks.
 
 ## Installation
