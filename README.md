@@ -11,6 +11,10 @@ MacOS/Linux
 curl https://raw.githubusercontent.com/ex3ndr/datasets/main/install.sh | sh
 ```
 
+## List of datasets
+
+Right now available datasets are listed here: https://korshakov.com/datasets
+
 ## How to use
 
 Entry point is the `datasets.yaml` file in your project, that looks like this:
