@@ -1,0 +1,23 @@
+id: libriheavy-aligned
+name: "Libriheavy Aligned"
+url: "https://github.com/ex3ndr/supervoice-libriheavy-aligned"
+description: "Libriheavy alignments"
+license: Unknown
+
+dataset:
+  url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-aligned.tar.gz"
+  hashes:
+    sha1: "81d6b19fca1c1e3e28273adda1499ed73c1c1d16"
+    sha256: "9df31bd1e66bdfe56583e216f52a8b1a76107c1fea1958bb3a6c89d2ad18636a"
+    md5: "6e8a5728637e328b4248780b49a06ced"
+extras:
+  medium:
+    id: libriheavy-medium-aligned
+    name: Libriheavy Medium
+    description: "Medium slice of Libriheavy"
+    dataset:
+      url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-medium-aligned.tar.gz"
+      hashes:
+        sha1: "fee388bd7ca514e6fbf6c3302c402382dffbef9f"
+        sha256: "65f7cb99acbe4a727664bdbd17ae83fabd5d6a809789ebe67637f85125281455"
+        md5: "cea8ffec99199f426f6f0031de14a444"
