@@ -6,6 +6,7 @@ license: Unknown
 
 dataset:
   url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-aligned.tar"
+  format: "tar"
   hashes:
     sha1: "81d6b19fca1c1e3e28273adda1499ed73c1c1d16"
     sha256: "9df31bd1e66bdfe56583e216f52a8b1a76107c1fea1958bb3a6c89d2ad18636a"
@@ -17,6 +18,7 @@ extras:
     description: "Medium slice of Libriheavy"
     dataset:
       url: "https://shared.korshakov.com/datasets/libriheavy/libriheavy-medium-aligned.tar"
+      format: "tar"
       hashes:
         sha1: "fee388bd7ca514e6fbf6c3302c402382dffbef9f"
         sha256: "65f7cb99acbe4a727664bdbd17ae83fabd5d6a809789ebe67637f85125281455"
